@@ -27,6 +27,10 @@ header.masthead {
       font-size: 3rem;
       font-family: "playlistscript";
     }
+    h3 {
+      font-size: 10rem;
+    font-family: "Nanum Gothic";
+    }
   }
    header.masthead @include media-breakpoint-up(xl) {
     h1 {
@@ -34,4 +38,4 @@ header.masthead {
       font-family: "playlistscript";
     }
   }
-}
+
