@@ -653,6 +653,8 @@ a {
   /* -webkit-box-shadow: 0px 3px 13px 0px rgba(0, 0, 0, 0.15); */
   -moz-box-shadow: 0px 3px 13px 0px rgba(0, 0, 0, 0.15);
   /* box-shadow: 0px 3px 13px 0px rgba(0, 0, 0, 0.15); */
+  position: relative;
+  top: 200px;
 }
 
 #introgifs:hover {
@@ -10565,7 +10567,7 @@ a {
 header.masthead {
   padding-top: 10rem;
   padding-bottom: calc(10rem - 72px);
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+  background-image: linear-gradient(rgba(237, 168, 206, 0.6), rgba(169, 200, 232, 0.6)),
     url("https://cdn.glitch.com/530d92f6-375b-4a27-915c-2ea2fbce1d73%2F_IMG_7785-4.jpg?v=1589228911789");
   background-position: center;
   background-repeat: no-repeat;
@@ -10710,7 +10712,7 @@ a {
 header.masthead2 {
   padding-top: 10rem;
   padding-bottom: calc(10rem - 72px);
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+  background-image: linear-gradient(rgba(0,0,0, 0.6), rgba(0,0,0, 0.6)),
     url("https://cdn.glitch.com/530d92f6-375b-4a27-915c-2ea2fbce1d73%2FIMG_1572.jpg?v=1589087245360");
   background-position: center;
   background-repeat: no-repeat;
@@ -10745,7 +10747,7 @@ header.masthead2 h1 {
 header.masthead3 {
   padding-top: 10rem;
   padding-bottom: calc(10rem - 72px);
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+  background-image: linear-gradient(rgba(237, 168, 206, 0.6), rgba(169, 200, 232, 0.6)),
     url("https://cdn.glitch.com/031b1ff8-fc8f-44a3-8955-846482730e3c%2FCopy%20of%20_DSC8942.jpg?v=1575199945788");
   background-position: center;
   background-repeat: no-repeat;
@@ -10787,7 +10789,7 @@ header.masthead3 h1 {
 header.masthead4 {
   padding-top: 10rem;
   padding-bottom: calc(10rem - 72px);
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+  background-image: linear-gradient(rgba(237, 168, 206, 0.6), rgba(169, 200, 232, 0.6)),
     url("https://cdn.glitch.com/031b1ff8-fc8f-44a3-8955-846482730e3c%2FSuperposition-7.jpg?v=1575199924853");
   background-position: center;
   background-repeat: no-repeat;
@@ -10829,7 +10831,7 @@ header.masthead4 h1 {
 header.masthead5 {
   padding-top: 10rem;
   padding-bottom: calc(10rem - 72px);
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+  background-image: linear-gradient(rgba(237, 168, 206, 0.6), rgba(169, 200, 232, 0.6)),
     url("https://cdn.glitch.com/031b1ff8-fc8f-44a3-8955-846482730e3c%2Fsuperpos1-2%20(1).JPG?v=1575199924853");
   background-position: center;
   background-repeat: no-repeat;
@@ -10871,7 +10873,7 @@ header.masthead5 h1 {
 header.masthead6 {
   padding-top: 10rem;
   padding-bottom: calc(10rem - 72px);
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+  background-image: linear-gradient(rgba(237, 168, 206, 0.6), rgba(169, 200, 232, 0.6)),
     url("https://cdn.glitch.com/530d92f6-375b-4a27-915c-2ea2fbce1d73%2FIMG_1493%20copy.jpg?v=1589260339750");
   background-position: center;
   background-repeat: no-repeat;
@@ -10919,7 +10921,7 @@ header.masthead6 h3 {
 header.masthead7 {
   padding-top: 10rem;
   padding-bottom: calc(10rem - 72px);
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+  background-image: linear-gradient(rgba(237, 168, 206, 0.6), rgba(169, 200, 232, 0.6)),
     url("https://cdn.glitch.com/530d92f6-375b-4a27-915c-2ea2fbce1d73%2FLRG_ALP01220.jpg?v=1589086710324");
   background-position: center;
   background-repeat: no-repeat;
@@ -10965,7 +10967,7 @@ header.masthead7 h1 {
 header.masthead8 {
   padding-top: 10rem;
   padding-bottom: calc(10rem - 72px);
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+  background-image: linear-gradient(rgba(237, 168, 206, 0.6), rgba(169, 200, 232, 0.6)),
     url("https://cdn.glitch.com/530d92f6-375b-4a27-915c-2ea2fbce1d73%2FIMG_1493%20copy.jpg?v=1589260339750");
   background-position: center;
   background-repeat: no-repeat;
@@ -11014,7 +11016,7 @@ header.masthead8 h3 {
 header.masthead9{
   padding-top: 10rem;
   padding-bottom: calc(10rem - 72px);
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+  background-image: linear-gradient(rgba(237, 168, 206, 0.6), rgba(169, 200, 232, 0.6)),
     url("https://cdn.glitch.com/530d92f6-375b-4a27-915c-2ea2fbce1d73%2FIMG_1525.jpg?v=1589322629878");
   background-position: center;
   background-repeat: no-repeat;
@@ -11063,7 +11065,7 @@ header.masthead9 h3 {
 header.masthead10{
   padding-top: 10rem;
   padding-bottom: calc(10rem - 72px);
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+  background-image: linear-gradient(rgba(237, 168, 206, 0.6), rgba(169, 200, 232, 0.6)),
     url("https://cdn.glitch.com/530d92f6-375b-4a27-915c-2ea2fbce1d73%2FLRG_ALP01369.jpg?v=1589323255093");
   background-position: center;
   background-repeat: no-repeat;
