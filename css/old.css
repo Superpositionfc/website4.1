@@ -11116,17 +11116,17 @@ header.masthead10 h3 {
 
 /* CHAPTERS PAGE */
 header.masthead11{
-  padding-top: 5rem;
-  padding-bottom: calc(5rem - 72px);
+  padding-top: 10rem;
+  padding-bottom: calc(10rem - 72px);
   background-image: linear-gradient(rgba(237, 168, 206, 0.6), rgba(169, 200, 232, 0.6)),
-    url("https://cdn.glitch.com/530d92f6-375b-4a27-915c-2ea2fbce1d73%2FLRG_ALP01369.jpg?v=1589323255093");
+    url("/img/chapters-masthead.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-size: cover;
 }
 header.masthead11 h1 {
-  font-size: 2rem;
+  font-size: 2.25rem;
   font-family: "playlistscript";
 }
 
@@ -11137,8 +11137,8 @@ header.masthead11 h3 {
 
 @media (min-width: 992px) {
   header.masthead11 {
-    height: 70vh;
-    min-height: 30rem !important;
+    height: 140vh;
+    min-height: 50rem;
     padding-top: 72px;
     padding-bottom: 0;
   }
@@ -11152,7 +11152,7 @@ header.masthead11 h3 {
 }
 @media (min-width: 1200px) {
   header.masthead11 h1 {
-    font-size: 4.5rem;
+    font-size: 6.5rem;
     font-family: "playlistscript";
   }
 }
@@ -11163,4 +11163,100 @@ header.masthead11 h3 {
   }
 }
 
- 
+header.masthead12{
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  background-image: linear-gradient(rgba(237, 168, 206, 0.6), rgba(169, 200, 232, 0.6)),
+    url("https://cdn.glitch.com/530d92f6-375b-4a27-915c-2ea2fbce1d73%2FLRG_ALP01369.jpg?v=1589323255093");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+}
+header.masthead12 h1 {
+  font-size: 2rem;
+  font-family: "playlistscript";
+}
+
+header.masthead12 h3 {
+  font-size: 2.0rem;
+  font-family: "Nanum Gothic";
+}
+
+@media (min-width: 992px) {
+  header.masthead12 {
+    height: 70vh;
+    /* min-height: 30rem !important; */
+    padding-top: 72px;
+    padding-bottom: 0;
+  }
+  header.masthead12 p {
+    font-size: 1.15rem;
+  }
+  header.masthead12 h1 {
+    font-size: 3rem;
+    font-family: playlistscript;
+  }
+}
+@media (min-width: 1200px) {
+  header.masthead12 h1 {
+    font-size: 4.5rem;
+    font-family: "playlistscript";
+  }
+}
+@media (max-width: 480px) {
+  header.masthead12 h1 {
+    font-size: 6.5rem;
+    font-family: "playlistscript";
+  }
+}
+
+#chapters-map {
+  /* display: grid; */
+  grid-template-columns: 3fr minmax(200px, 6fr);
+  justify-content: center;
+  align-items: center;
+  position: relative;
+} 
+
+#leaflet-map {
+  z-index: -1;
+}
+
+#chapters-map .overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  background: linear-gradient(rgba(237, 168, 206, 0.6), rgba(169, 200, 232, 0.6));
+  text-align: center;
+  transition: 0.5s ease;
+  cursor: pointer;
+}
+
+@keyframes text-glow {
+  100% {
+    text-shadow: 0 0 0.1em #fff;
+  }
+}
+
+#chapters-map .overlay .animate {
+  animation: text-glow 5s ease 0.1s infinite alternate;
+}
+
+#chapters-map .overlay.invisible {
+  opacity: 0;
+}
+
+@media screen and (max-width: 600px) {
+  .sectionheader {
+    font-size: 2em;
+  }
+}

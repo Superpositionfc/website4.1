@@ -40,10 +40,15 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+   integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+   crossorigin=""/>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-        <script src="script.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+   integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+   crossorigin=""></script>
+    <script src="script.js"></script>
   </head>
 
   <body onload="myFunction1000()" id="page-top">
@@ -59,7 +64,7 @@
       id="mainNav"
     >
       <div class="container">
-        <a class="navbar-brand js-scroll-trigger" href="#page-top"
+        <a class="navbar-brand js-scroll-trigger" href="/"
           >SUPERPOSITION</a
         >
         <button
@@ -76,10 +81,10 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto my-2 my-lg-0">
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#about">ABOUT</a>
+              <a class="nav-link" href="/#about">ABOUT</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#team">TEAM</a>
+              <a class="nav-link" href="/#team">TEAM</a>
             </li>
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="chapters.html">CHAPTERS</a>
@@ -115,7 +120,7 @@
     </nav>
 
     <!-- Masthead -->
-    <header class="masthead" id = "headerwork">
+    <header class="masthead11" id = "headerwork">
       <div class="container h-100">
           <div
             class="row h-100 align-items-center justify-content-center text-center"
@@ -162,39 +167,50 @@
         </div>
       </section>
     </center>
-
-
-    <!-- Masthead -->
-    <section>
-      <header class="masthead11" id="chapters-map">
-        <div class="container h-100">
-          <div
-            class="row h-100 align-items-center justify-content-center text-center"
-          >
-            <div class="col-lg-10 align-self-end">
-              <h1 class="text-white">
-                Chapters Around the World
-              </h1>
-            </div>
-            <div class="col-lg-8 align-self-baseline">
-              <h3 class="text-white-75 font-weight-light mb-5" style = "  font-family: 'Nanum Gothic', sans-serif;">
-                <strong>30</strong> chapters and counting.
-              </h3>
-            </div>
-          </div>
-        </div>
-      </header>
+    <section id="chapters-map">
+      <div style="height: 80vh" id="leaflet-map"></div>
+      <div class="overlay" onclick="fadeOutOverlay()">
+        <p class="text-white animate mb-0" style="font-family: Nanum Gothic">(Tap to Interact)</p>
+        <h1 class="text-white sectionheader mt-0" style="font-family: playlistscript">Chapters Around the World</h1>
+        <h3 class="text-white font-weight-light" style = "font-family: 'Nanum Gothic', sans-serif;">
+          <strong>30</strong> chapters and counting.
+        </h3>
+      </div>
     </section>
     <!-- WHY START A CHAPTER -->
     <center>
-      <section id="aboutpading">
-        <div class="w3-row ">
-            <p class="sectionheader" id="about">Why Start a Chapter?</p>
+      <section>
+        <div style="padding: 3%" class="w3-row">
+            <p class="sectionheader">Why Open a Superposition Chapter?</p>
             <p align="left" class="sectiontext">
-                At our hackathons, the vast majority of attendees are from the Bay Area, a strongly STEM-oriented region. In 
-                order to create opportunities for girls from around the world to pursue STEM, we needed to go beyond. 
-                While can't bring everybody to San Francisco, we can bring the empowering Superposition experience worldwide. 
+              <strong>Extensive Resources</strong><br>
+              With our experience managing large-scale events and social media, <strong>we'll provide you
+              with all the resources you need.</strong> Skip the trial and error process, and <em>get
+              right to creating change.</em> You'll be added to a Slack workspace where you'll constantly
+              be getting new materials, like lesson plans, guides, and advice. You'll have access to our
+              Lead Director and Chapters team for asking any and all questions.
+              <br>
+              <br>
+              <strong>Recognition</strong><br>
+              Every month, we will award a <strong>Chapter of the Month</strong> and <strong>Changemaker
+              of the Month</strong> recognizing chapters and individuals going above and beyond to uphold 
+              our mission.
+              <br>
+              <br>
+              <strong>Flexibility</strong><br>
+              Your work will remain independent of other chapters and of the core team. You'll have the
+              freedom to work on <strong>any</strong> project of your choosing, and recieve all the 
+              support you need.
+              <br>
+              <br>
+              <strong>IMPACT.</strong><br>
+              <strong>Empower girls in STEM & be a leader in an organization reaching thousands
+              people in 52+ countries.</strong> You have the opportunity to make a difference 
+              in somebody's life by bringing them in the world of STEM. You have the power to make an impact.
             </p>
+            <a href="http://bit.ly/sp_chapterinfo" target="_blank">
+                <button class="button">APPLICATION INFO</button>
+            </a>
           </div>
         </div>
       </section>
@@ -317,6 +333,7 @@
     <!-- Custom scripts for this template -->
     <script src="js/creative.min.js"></script>
     <script src="js/script.js"></script>
+    <script src="js/chapters-map.js"></script>
 
     <script src="jquery.js"></script>
     <script src="fadein.js"></script>

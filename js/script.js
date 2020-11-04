@@ -13,13 +13,14 @@ for (i = 0; i < acc.length; i++) {
   });
 }
 
-// VALUE ONE
+// COUNTING ANIMATION FOR STATISTICS
 function animateValue(id, start, end, duration) {
   var range = end - start;
   var current = start;
   var increment = end > start ? 1 : -1;
   var stepTime = Math.abs(Math.floor(duration / range));
   var obj = document.getElementById(id);
+  if(!obj) return;
   var timer = setInterval(function() {
     current += increment;
     obj.innerHTML = current;
@@ -30,96 +31,11 @@ function animateValue(id, start, end, duration) {
 }
 
 animateValue("value", 0, 484, 6000);
-
-// VALUE TWO
-function animateValue2(id, start, end, duration) {
-  var range = end - start;
-  var current = start;
-  var increment = end > start ? 1 : -1;
-  var stepTime = Math.abs(Math.floor(duration / range));
-  var obj = document.getElementById(id);
-  var timer = setInterval(function() {
-    current += increment;
-    obj.innerHTML = current;
-    if (current == end) {
-      clearInterval(timer);
-    }
-  }, stepTime);
-}
-
-animateValue2("value2", 0, 119, 6000);
-
-// VALUE THREE
-function animateValue3(id, start, end, duration) {
-  var range = end - start;
-  var current = start;
-  var increment = end > start ? 1 : -1;
-  var stepTime = Math.abs(Math.floor(duration / range));
-  var obj = document.getElementById(id);
-  var timer = setInterval(function() {
-    current += increment;
-    obj.innerHTML = current;
-    if (current == end) {
-      clearInterval(timer);
-    }
-  }, stepTime);
-}
-
-animateValue3("value3", 0, 4, 6000);
-
-// VALUE FOUR
-function animateValue4(id, start, end, duration) {
-  var range = end - start;
-  var current = start;
-  var increment = end > start ? 1 : -1;
-  var stepTime = Math.abs(Math.floor(duration / range));
-  var obj = document.getElementById(id);
-  var timer = setInterval(function() {
-    current += increment;
-    obj.innerHTML = current;
-    if (current == end) {
-      clearInterval(timer);
-    }
-  }, stepTime);
-}
-
-animateValue3("value4", 0, 8, 6000);
-
-// VALUE FIVE
-function animateValue5(id, start, end, duration) {
-  var range = end - start;
-  var current = start;
-  var increment = end > start ? 1 : -1;
-  var stepTime = Math.abs(Math.floor(duration / range));
-  var obj = document.getElementById(id);
-  var timer = setInterval(function() {
-    current += increment;
-    obj.innerHTML = current;
-    if (current == end) {
-      clearInterval(timer);
-    }
-  }, stepTime);
-}
-
-animateValue3("value5", 0, 77, 6000);
-
-// VALUE SIX
-function animateValue6(id, start, end, duration) {
-  var range = end - start;
-  var current = start;
-  var increment = end > start ? 1 : -1;
-  var stepTime = Math.abs(Math.floor(duration / range));
-  var obj = document.getElementById(id);
-  var timer = setInterval(function() {
-    current += increment;
-    obj.innerHTML = current;
-    if (current == end) {
-      clearInterval(timer);
-    }
-  }, stepTime);
-}
-
-animateValue3("value6", 0, 220, 6000);
+animateValue("value2", 0, 119, 6000);
+animateValue("value3", 0, 4, 6000);
+animateValue("value4", 0, 8, 6000);
+animateValue("value5", 0, 77, 6000);
+animateValue("value6", 0, 220, 6000);
 
 // var slideIndex = 0;
 // showSlides();
