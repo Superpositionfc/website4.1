@@ -30,9 +30,9 @@ function animateValue(id, start, end, duration) {
   }, stepTime);
 }
 
-animateValue("value", 0, 484, 6000);
-animateValue("value2", 0, 119, 6000);
-animateValue("value3", 0, 4, 6000);
+animateValue("value", 0, 300000, 6000);
+animateValue("value2", 0, 52, 6000);
+animateValue("value3", 0, 36, 6000);
 animateValue("value4", 0, 8, 6000);
 animateValue("value5", 0, 77, 6000);
 animateValue("value6", 0, 220, 6000);
