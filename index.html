@@ -39,10 +39,15 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+   integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+   crossorigin=""/>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-        <script src="script.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+   integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+   crossorigin=""></script>
+    <script src="script.js"></script>
   </head>
 
   <body onload="myFunction1000()" id="page-top">
@@ -58,7 +63,7 @@
       id="mainNav"
     >
       <div class="container">
-        <a class="navbar-brand js-scroll-trigger" href="#page-top"
+        <a class="navbar-brand js-scroll-trigger" href="/"
           >SUPERPOSITION</a
         >
         <button
@@ -75,10 +80,13 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto my-2 my-lg-0">
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#about">ABOUT</a>
+              <a class="nav-link" href="/#about">ABOUT</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#team">TEAM</a>
+              <a class="nav-link" href="story.html">OUR STORY</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="team.html">TEAM</a>
             </li>
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="chapters.html">CHAPTERS</a>
@@ -88,7 +96,7 @@
             </li>
             
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="covid.html">WORKSHOPS</a>
+              <a class="nav-link js-scroll-trigger" href="workshops.html">WORKSHOPS</a>
             </li>
 
             <li class="nav-item">
@@ -142,7 +150,7 @@
             </button>
             <button
               class="button"
-              onclick="location.href='https://bit.ly/sp_chapterinfo'" id="home"
+              onclick="location.href='chapters.html'" id="home"
             >
               CHAPTERS
             </button>
@@ -212,11 +220,11 @@
             <p align="left" class="sectiontext">
               Since 2016, we've held the Bay Area's largest all-women and non-binary hackathon in partnership with companies like VSCO and Uber. 
               Starting in March 2020, we expanded beyond a 24-hour hackathon to provide year-round opportunities for our community through a webinar series, 
-              Uber mentorship program, chapter program, and more. With our 34 chapters, events and content, we've reached 300,000+ individuals in 44 states and 52 countries.
+              Uber mentorship program, chapter program, and more. With our 36 international chapters, events and social media content, we've reached 300,000+ students in 44 states and 52 countries.
             </p>
             
             <p align="left" class="sectiontext">
-              Get involved with Superposition by joining our team or founding your own chapter! Find all of our latest Superposition opportunities <a href="http://linktr.ee/superpositionfc">here.</a></p>
+              Get involved with Superposition by joining our <a href="http://bit.ly/sp_slack">Community Slack</a> or <a href="http://bit.ly/sp_chapter">founding your own chapter</a>! Find all of our latest Superposition opportunities <a href="http://linktr.ee/superpositionfc">here.</a></p>
 
              <left
               ><button
@@ -263,7 +271,7 @@
     </section>
     
     
-
+<!-- TESTIMONIALS
     <center>
       <section id="testimonials">
         <div class="testimonials" id="pinkbg">
@@ -301,9 +309,9 @@
                     </p>
                   </div>
                 </div>
-
+          -->
+          <!--
                 <div id="myModal" class="modal">
-                  <!-- Modal content -->
                   <div class="modal-content2">
                     <span class="close">&times;</span>
                     <div class="rowmodal">
@@ -352,7 +360,7 @@
                 </div>
 
                 <div id="myModal2" class="modal2">
-                  <!-- Modal content -->
+                 
                   <div class="modal-content2">
                     <span class="close2">&times;</span>
                     <div class="rowmodal">
@@ -401,7 +409,7 @@
                 </div>
 
                 <div id="myModal3" class="modal3">
-                  <!-- Modal content -->
+                  
                   <div class="modal-content3">
                     <span class="close3">&times;</span>
                     <div class="rowmodal">
@@ -441,168 +449,9 @@
         </div>
       </section>
     </center>
-    
-    <!-- Slideshow container 
-     <center>
-      <section id="slider">
-        <input type="radio" id="trigger1" name="slider"  checked autofocus/>
-        <label for="trigger1"></label>
-        <div class="slide bg1"></div>
+   --> 
 
-        <input type="radio" id="trigger2" name="slider" />
-        <label for="trigger2"></label>
-        <div class="slide bg2"></div>
-
-        <input type="radio" id="trigger3" name="slider" />
-        <label for="trigger3"></label>
-        <div class="slide bg3"></div>
-
-        <input type="radio" id="trigger4" name="slider" />
-        <label for="trigger4"></label>
-        <div class="slide bg4"></div>
-
-        <input type="radio" id="trigger5" name="slider" />
-        <label for="trigger5"></label>
-        <div class="slide bg5"></div>
-        
-        <input type="radio" id="trigger6" name="slider" />
-        <label for="trigger6"></label>
-        <div class="slide bg6"></div>
-        
-        <input type="radio" id="trigger7" name="slider" />
-        <label for="trigger7"></label>
-        <div class="slide bg7"></div>
-        
-        <input type="radio" id="trigger8" name="slider" />
-        <label for="trigger8"></label>
-        <div class="slide bg8"></div>
-        
-        <input type="radio" id="trigger9" name="slider" />
-        <label for="trigger9"></label>
-        <div class="slide bg9"></div>
-      </section>
-    </center> -->
   
-    <!-- TEAM -->
-
-    <section>
-      <center>
-        <div id="begin" class="team">
-          <p class="sectionheader" id="team">Meet the Team</p>
-          <br />
-          <div class="row2">
-            <div class="column2">
-              <img
-                class="circle"
-                src="https://cdn.glitch.com/f23b8598-8c75-4b1a-83f7-6d57abc0ee65%2FStephanie%20Su.jpg?v=1571125570588"
-              />
-              <h2 class="teamnames" style = "  font-family: 'Nanum Gothic', sans-serif;">Stephanie Su</h2>
-              <p class="teamdescriptions">Lead Director</p>
-              <a href="https://www.instagram.com/steph.su/" target="_blank"
-                ><img
-                  class="teamsocials"
-                  src="https://cdn.glitch.com/f23b8598-8c75-4b1a-83f7-6d57abc0ee65%2FIGLOGO.png?v=1574203607644"
-              /></a>
-              <a
-                href="https://www.facebook.com/stephanie.su.9634"
-                target="_blank"
-                ><img
-                  class="teamsocials"
-                  src="https://cdn.glitch.com/f23b8598-8c75-4b1a-83f7-6d57abc0ee65%2Fimage%20(36).png?v=1570251787028"
-              /></a>
-              <a href="mailto: stephanie@superposition.tech" target="_blank"
-                ><img
-                  class="teamsocials"
-                  src="https://cdn.glitch.com/f23b8598-8c75-4b1a-83f7-6d57abc0ee65%2Femailicon.png?v=1574202803620"
-              /></a>
-              <a
-                href="https://www.linkedin.com/in/stephanie-su-527437169/"
-                target="_blank"
-                ><img
-                  class="teamsocials"
-                  src="https://cdn.glitch.com/f23b8598-8c75-4b1a-83f7-6d57abc0ee65%2Flinkedinicon.png?v=1574202928219"
-              /></a>
-            </div>
-            
-            <div class="column2">
-              <img
-                class="circle"
-                src="https://cdn.glitch.com/f23b8598-8c75-4b1a-83f7-6d57abc0ee65%2FGIRLS%20WHO%20CODE%20(14).png?v=1571125705882"
-              />
-              <h2 class="teamnames" style = "  font-family: 'Nanum Gothic', sans-serif;">Miha Bhaskaran</h2>
-              <p class="teamdescriptions">Operations Director</p>
-              <a href="https://www.facebook.com/athmihab" target="_blank"
-                ><img
-                  class="teamsocials"
-                  src="https://cdn.glitch.com/f23b8598-8c75-4b1a-83f7-6d57abc0ee65%2Fimage%20(36).png?v=1570251787028"
-              /></a>
-              <a href="mailto:manasi@superposition.tech" target="_blank"
-                ><img
-                  class="teamsocials"
-                  src="https://cdn.glitch.com/f23b8598-8c75-4b1a-83f7-6d57abc0ee65%2Femailicon.png?v=1574202803620"
-              /></a>
-            </div>
-            <div class="column2">
-              <img
-                class="circle"
-                src="https://cdn.glitch.com/f23b8598-8c75-4b1a-83f7-6d57abc0ee65%2FGIRLS%20WHO%20CODE%20(11).png?v=1571122618755"
-              />
-              <h2 class="teamnames" style = "  font-family: 'Nanum Gothic', sans-serif;">Helena Lowe</h2>
-              <p class="teamdescriptions">Partnerships Director</p>
-              <a href="https://www.instagram.com/helenarlowe/" target="_blank"
-                ><img
-                  class="teamsocials"
-                  src="https://cdn.glitch.com/f23b8598-8c75-4b1a-83f7-6d57abc0ee65%2FIGLOGO.png?v=1574203607644"
-              /></a>
-              <a
-                href="https://www.facebook.com/helena.lowe.7739"
-                target="_blank"
-                ><img
-                  class="teamsocials"
-                  src="https://cdn.glitch.com/f23b8598-8c75-4b1a-83f7-6d57abc0ee65%2Fimage%20(36).png?v=1570251787028"
-              /></a>
-              <a href="mailto:helenalowe03@gmail.com" target="_blank"
-                ><img
-                  class="teamsocials"
-                  src="https://cdn.glitch.com/f23b8598-8c75-4b1a-83f7-6d57abc0ee65%2Femailicon.png?v=1574202803620"
-              /></a>
-              <a
-                href="https://www.linkedin.com/in/helena-lowe-a7197b182/"
-                target="_blank"
-                ><img
-                  class="teamsocials"
-                  src="https://cdn.glitch.com/f23b8598-8c75-4b1a-83f7-6d57abc0ee65%2Flinkedinicon.png?v=1574202928219"
-              /></a>
-            </div>
-            <div class="column2">
-              <img
-                class="circle"
-                src="https://cdn.glitch.com/f23b8598-8c75-4b1a-83f7-6d57abc0ee65%2FGIRLS%20WHO%20CODE%20(7).png?v=1571121304034"
-              />
-              <h2 class="teamnames" style = "  font-family: 'Nanum Gothic', sans-serif;">Shamita Gurusu</h2>
-              <p class="teamdescriptions">Outreach Director</p>
-              <a
-                href="https://www.instagram.com/thedisney_darling/"
-                target="_blank"
-                ><img
-                  class="teamsocials"
-                  src="https://cdn.glitch.com/f23b8598-8c75-4b1a-83f7-6d57abc0ee65%2FIGLOGO.png?v=1574203607644"
-              /></a>
-              <a href="shamita@superposition.tech" target="_blank"
-                ><img
-                  class="teamsocials"
-                  src="https://cdn.glitch.com/f23b8598-8c75-4b1a-83f7-6d57abc0ee65%2Femailicon.png?v=1574202803620"
-              /></a>
-            </div>
-
-          </div>
-        </div>
-      </center>
-    </section>
-    <br/>
-    <br/>
-    <br/>
-    <br/>
     
     <section>
       <center>
@@ -723,4 +572,5 @@
      </div>
   </body>
 </html>
+
 
