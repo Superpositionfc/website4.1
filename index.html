@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -39,10 +40,15 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+   integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+   crossorigin=""/>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-        <script src="script.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+   integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+   crossorigin=""></script>
+    <script src="script.js"></script>
   </head>
 
   <body onload="myFunction1000()" id="page-top">
@@ -58,7 +64,7 @@
       id="mainNav"
     >
       <div class="container">
-        <a class="navbar-brand js-scroll-trigger" href="#page-top"
+        <a class="navbar-brand js-scroll-trigger" href="/"
           >SUPERPOSITION</a
         >
         <button
@@ -75,17 +81,23 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto my-2 my-lg-0">
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#about">ABOUT</a>
+              <a class="nav-link" href="/#about">ABOUT</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#team">TEAM</a>
+              <a class="nav-link" href="story.html">OUR STORY</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="team.html">TEAM</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="chapters.html">CHAPTERS</a>
             </li>
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="hackathon.html">HACKATHON</a>
             </li>
             
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="covid.html">WORKSHOPS</a>
+              <a class="nav-link js-scroll-trigger" href="workshops.html">WORKSHOPS</a>
             </li>
 
             <li class="nav-item">
@@ -123,25 +135,25 @@
           </div>
           <div class="col-lg-8 align-self-baseline">
             <h3 class="text-white-75 font-weight-light mb-5" id="locationsub2">
-              BRIDGING THE GENDER GAP IN TECH
+              BRIDGING THE GENDER GAP IN STEM
             </h3>
             <button
               class="button"
-              onclick="location.href='covid.html'" id="home"
+              onclick="location.href='https://linktr.ee/superpositionfc'" id="home"
             >
-              WORKSHOPS
+              OPPORTUNITIES
             </button>
             <button
               class="button"
-              onclick="location.href='https://bit.ly/sp_mailing'" id="home"
+              onclick="location.href='https://bit.ly/sp_slack'" id="home"
             >
-              NEWSLETTER
+              COMMUNITY SLACK
             </button>
             <button
               class="button"
-              onclick="location.href='https://bit.ly/sp4_photos'" id="home"
+              onclick="location.href='chapters.html'" id="home"
             >
-              PHOTOS
+              CHAPTERS
             </button>
             <!-- <h3 class="text-white-75 font-weight-light mb-5" id="locationsub2" style = "  font-family: 'Nanum Gothic', sans-serif;">
               Uber HQ | February 29 - March 1, 2020
@@ -180,15 +192,15 @@
             <center>
               <div class="column4">
                 <h2 id="value" class="expectitles2">264</h2>
-                <p class="expectsubtitles2">Attendees</p>
+                <p class="expectsubtitles2">Students Reached</p>
               </div>
               <div class="column4">
                 <h2 id="value2" class="expectitles2">61</h2>
-                <p class="expectsubtitles2">Projects</p>
+                <p class="expectsubtitles2">Countries Reached</p>
               </div>
               <div class="column4">
                 <h2 id="value3" class="expectitles2">3</h2>
-                <p class="expectsubtitles2">Hackathons</p>
+                <p class="expectsubtitles2">International Chapters</p>
               </div>
             </center>
           </div>
@@ -203,38 +215,25 @@
           <div class="w3-container w3-half w3">
             <p class="sectionheader" id="about">About Us</p>
             <p align="left" class="sectiontext">
-              Superposition is a 501(c)(3) non-profit aiming to <b class="emphasis">  bridge the gender gap in tech by creating educational opportunities </b> like hackathons,
-              workshops, and panels. 
-              Every year, we host the 
-              <b class="emphasis">Bay Area's largest all-women and non-binary hackathon</b>.
-            </p>
-            <p align="left" class="sectiontext">
-              Our mission is to
-              <b class="emphasis">empower young womxn</b> in tech of all levels
-              of experience by providing a
-              <b class="emphasis">supportive environment</b> for them to explore
-              their passion for computer science. Additionally, we want to
-              encourage more girls to
-              <b class="emphasis">join, learn, and thrive</b> in
-              technology.
-              
+              Superposition is an international non-profit bridging the gender gap in STEM. Our mission is to <b class="emphasis">empower women in STEM</b> by creating educational opportunities & supportive spaces for developing their passions. 
             </p>
             
             <p align="left" class="sectiontext">
-              Currently, we are hosting a free virtual workshop series for students of all
-              ages and gender identities to help students continue their education, and to
-              fundraise to purchase PPE for Bay Area healthcare workers. To get involved,
-              request specific workshops <b class="emphasis"><a href="http://bit.ly/sp4_wkshp">here</a></b>, or 
-              <b class="emphasis"><a href="http://bit.ly/sp_covidfund">donate</a></b> to our fundraising campaign!
+              Since 2016, we've held the <b class="emphasis">Bay Area's largest all-women and non-binary hackathon</b> in partnership with companies like <b class="emphasis">VSCO</b> and <b class="emphasis">Uber</b>. 
+              Starting in March 2020, we expanded beyond a 24-hour hackathon to provide year-round opportunities for our community through a webinar series, 
+              Uber mentorship program, chapter program, and more. With our 36 international chapters, events and social media content, we've reached <b class="emphasis">300,000+ students in 44 states and 52 countries.</b>
             </p>
+            
+            <p align="left" class="sectiontext">
+              Get involved with Superposition by joining our <b class="emphasis"><a href="http://bit.ly/sp_slack">Community Slack</a></b> or <b class="emphasis"><a href="http://bit.ly/sp_chapter">founding your own chapter</a></b>! Find all of our latest Superposition opportunities <a href="http://linktr.ee/superpositionfc">here.</a></p>
 
-            <left
+             <left
               ><button
                 align="left"
                 class="button" id = "buttonmobile"
-                onclick="location.href='covid.html'"
+                onclick="location.href='http://linktr.ee/superpositionfc'"
               >
-                LEARN ABOUT OUR INITIATIVE
+                JOIN SUPERPOSITION
               </button></left
             >
           </div>
@@ -250,6 +249,7 @@
 
 
     <!-- Masthead -->
+    <!-- 
     <section>
       <header class="masthead2">
         <div class="container h-100">
@@ -272,239 +272,15 @@
       </header>
     </section>
     
-    
-
-    <center>
-      <section id="testimonials">
-        <div class="testimonials" id="pinkbg">
-          <center>
-            <br />
-            <p class="sectionheader">Testimonials</p>
-          </center>
-          <h4 class="sponsorssubtitle" id = "testimonialsub" style = "  font-family: 'Nanum Gothic', sans-serif;">
-            Since our start in October 2016, we’ve worked to create an
-            <b>inclusive</b> environment of students, mentors, workshops, and
-            opportunities <i><b>— with something for everyone.</b></i>
-          </h4>
-          <br />
-          <br />
-          <center>
-            <div class="container">
-              <div class="card-deck">
-                <div class="card my-3" id="myBtn">
-                  <img
-                    src="https://cdn.glitch.com/031b1ff8-fc8f-44a3-8955-846482730e3c%2FCopy%20of%20_DSC8943.jpg?v=1574047853404"
-                    class="card-img-top"
-                    id="size"
-                  />
-                  <div class="card-body">
-                    <br />
-                    <h5 class="card-title" style = "  font-family: 'Nanum Gothic', sans-serif;">MICHELLE ZHANG</h5>
-                    <h6 style = "  font-family: 'Nanum Gothic', sans-serif;">Johns Hopkins '22</h6>
-                    <br />
-                    <p class="card-text" align="left">
-                      "I went in, dead set on being a pre-med major, only
-                      wanting to try out CS just for fun… after 24 hours, I had
-                      attained an unimaginable amount of knowledge. In the end,
-                      I’m so grateful for this experience and the opportunity to
-                      have discovered a new seed of passion."
-                    </p>
-                  </div>
-                </div>
-
-                <div id="myModal" class="modal">
-                  <!-- Modal content -->
-                  <div class="modal-content2">
-                    <span class="close">&times;</span>
-                    <div class="rowmodal">
-                      <div class="columnmodal leftmodal">
-                        <img
-                          src="https://cdn.glitch.com/031b1ff8-fc8f-44a3-8955-846482730e3c%2FCopy%20of%20_DSC8943.jpg?v=1574047853404"
-                          class="card-img-top"
-                          id="sizemodal"
-                        />
-                      </div>
-                      <div class="columnmodal rightmodal">
-                        <h5 align="left" class="modaltitles" style = "  font-family: 'Nanum Gothic', sans-serif;">MICHELLE ZHANG</h5>
-                        <h6 class="modalsubtitles" align="left" style = "  font-family: 'Nanum Gothic', sans-serif;">
-                          Johns Hopkins '22
-                        </h6>
-                        <br />
-                        <p class="modalquotes" align="left">
-                          "I went in, dead set on being a pre-med major, only
-                          wanting to try out CS just for fun… after 24 hours, I
-                          had attained an unimaginable amount of knowledge. In
-                          the end, I’m so grateful for this experience and the
-                          opportunity to have discovered a new seed of passion."
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="card my-3" id="myBtn2">
-                  <img
-                    src="https://cdn.glitch.com/031b1ff8-fc8f-44a3-8955-846482730e3c%2FCopy%20of%20_DSC8958.jpg?v=1574047868342"
-                    class="card-img-top"
-                  />
-                  <div class="card-body">
-                    <br />
-                    <h5 class="card-title" style = "  font-family: 'Nanum Gothic', sans-serif;">NEHA VINJAPURI</h5>
-                    <h6 style = "  font-family: 'Nanum Gothic', sans-serif;">Best Overall Hack At Superposition III</h6>
-                    <br />
-                    <p class="card-text" align="left">
-                      "Superposition allowed me to discover different tech
-                      career paths, meet other girls with similar interests, and
-                      be mentored by people in the industry in a comfortable and
-                      inclusive environment."
-                    </p>
-                  </div>
-                </div>
-
-                <div id="myModal2" class="modal2">
-                  <!-- Modal content -->
-                  <div class="modal-content2">
-                    <span class="close2">&times;</span>
-                    <div class="rowmodal">
-                      <div class="columnmodal leftmodal">
-                        <img
-                          src="https://cdn.glitch.com/031b1ff8-fc8f-44a3-8955-846482730e3c%2FCopy%20of%20_DSC8958.jpg?v=1574047868342"
-                          class="card-img-top"
-                          id="sizemodal"
-                        />
-                      </div>
-                      <div class="columnmodal rightmodal">
-                        <h5 align="left" class="modaltitles" style = "  font-family: 'Nanum Gothic', sans-serif;">NEHA VINJAPURI</h5>
-                        <h6 class="modalsubtitles" align="left" style = "  font-family: 'Nanum Gothic', sans-serif;">
-                          Best Overall Hack At Superposition III
-                        </h6>
-                        <br />
-                        <p class="modalquotes" align="left">
-                          "Superposition allowed me to discover different tech
-                          career paths, meet other girls with similar interests,
-                          and be mentored by people in the industry in a
-                          comfortable and inclusive environment."
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="card my-3" id="myBtn3">
-                  <img
-                    src="https://cdn.glitch.com/696a54c7-e493-465b-b503-c49262ef99ac%2FCopy%20of%20_DSC8942%20(2).jpg?v=1577954395726"
-                    class="card-img-top"
-                  />
-                  <div class="card-body">
-                    <br />
-                    <h5 class="card-title" style = "  font-family: 'Nanum Gothic', sans-serif;">SIDDHI KABADI</h5>
-                    <h6 style = "  font-family: 'Nanum Gothic', sans-serif;">Attended Superposition III</h6>
-                    <br />
-                    <p class="card-text" align="left">
-                      "Superposition was memorable to me because it helped me
-                      expand my knowledge about computer science in a very safe
-                      and friendly environment. My experience at Superposition
-                      inspired me to take APCS at my school to continue studying
-                      and learning about computer science!"
-                    </p>
-                  </div>
-                </div>
-
-                <div id="myModal3" class="modal3">
-                  <!-- Modal content -->
-                  <div class="modal-content3">
-                    <span class="close3">&times;</span>
-                    <div class="rowmodal">
-                      <div class="columnmodal leftmodal">
-                        <img
-                          src="https://cdn.glitch.com/696a54c7-e493-465b-b503-c49262ef99ac%2FCopy%20of%20_DSC8942%20(2).jpg?v=1577954395726"
-                          class="card-img-top"
-                          id="sizemodal"
-                        />
-                      </div>
-                      <div class="columnmodal rightmodal">
-                        <h5 align="left" class="modaltitles" style = "  font-family: 'Nanum Gothic', sans-serif;">SIDDHI KABADI</h5>
-                        <h6 class="modalsubtitles" align="left" style = "  font-family: 'Nanum Gothic', sans-serif;">
-                          Attended Superposition III
-                        </h6>
-                        <br />
-                        <p class="modalquotes" align="left">
-                          "Superposition was memorable to me because it helped
-                          me expand my knowledge about computer science in a
-                          very safe and friendly environment. My experience at
-                          Superposition inspired me to take APCS at my school to
-                          continue studying and learning about computer
-                          science!"
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </center>
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-        </div>
-      </section>
-    </center>
-    
-    <!-- Slideshow container 
-     <center>
-      <section id="slider">
-        <input type="radio" id="trigger1" name="slider"  checked autofocus/>
-        <label for="trigger1"></label>
-        <div class="slide bg1"></div>
-
-        <input type="radio" id="trigger2" name="slider" />
-        <label for="trigger2"></label>
-        <div class="slide bg2"></div>
-
-        <input type="radio" id="trigger3" name="slider" />
-        <label for="trigger3"></label>
-        <div class="slide bg3"></div>
-
-        <input type="radio" id="trigger4" name="slider" />
-        <label for="trigger4"></label>
-        <div class="slide bg4"></div>
-
-        <input type="radio" id="trigger5" name="slider" />
-        <label for="trigger5"></label>
-        <div class="slide bg5"></div>
-        
-        <input type="radio" id="trigger6" name="slider" />
-        <label for="trigger6"></label>
-        <div class="slide bg6"></div>
-        
-        <input type="radio" id="trigger7" name="slider" />
-        <label for="trigger7"></label>
-        <div class="slide bg7"></div>
-        
-        <input type="radio" id="trigger8" name="slider" />
-        <label for="trigger8"></label>
-        <div class="slide bg8"></div>
-        
-        <input type="radio" id="trigger9" name="slider" />
-        <label for="trigger9"></label>
-        <div class="slide bg9"></div>
-      </section>
-    </center> -->
-  
-    <!-- TEAM -->
-
-    <section>
+     <section>
       <center>
+        <p class="sectionheader">Our Team</p>
         <div id="begin" class="team">
-          <p class="sectionheader" id="team">Meet the Team</p>
-          <br />
           <div class="row2">
             <div class="column2">
               <img
                 class="circle"
-                src="https://cdn.glitch.com/f23b8598-8c75-4b1a-83f7-6d57abc0ee65%2FStephanie%20Su.jpg?v=1571125570588"
+                src="https://cdn.glitch.com/530d92f6-375b-4a27-915c-2ea2fbce1d73%2FPFP.jpg?v=1604786608622"
               />
               <h2 class="teamnames" style = "  font-family: 'Nanum Gothic', sans-serif;">Stephanie Su</h2>
               <p class="teamdescriptions">Lead Director</p>
@@ -540,13 +316,13 @@
                 src="https://cdn.glitch.com/f23b8598-8c75-4b1a-83f7-6d57abc0ee65%2FGIRLS%20WHO%20CODE%20(14).png?v=1571125705882"
               />
               <h2 class="teamnames" style = "  font-family: 'Nanum Gothic', sans-serif;">Miha Bhaskaran</h2>
-              <p class="teamdescriptions">Operations Director</p>
+              <p class="teamdescriptions">Director of Mentorship</p>
               <a href="https://www.facebook.com/athmihab" target="_blank"
                 ><img
                   class="teamsocials"
                   src="https://cdn.glitch.com/f23b8598-8c75-4b1a-83f7-6d57abc0ee65%2Fimage%20(36).png?v=1570251787028"
               /></a>
-              <a href="mailto:manasi@superposition.tech" target="_blank"
+              <a href="mailto:athmiha@superposition.tech" target="_blank"
                 ><img
                   class="teamsocials"
                   src="https://cdn.glitch.com/f23b8598-8c75-4b1a-83f7-6d57abc0ee65%2Femailicon.png?v=1574202803620"
@@ -558,7 +334,7 @@
                 src="https://cdn.glitch.com/f23b8598-8c75-4b1a-83f7-6d57abc0ee65%2FGIRLS%20WHO%20CODE%20(11).png?v=1571122618755"
               />
               <h2 class="teamnames" style = "  font-family: 'Nanum Gothic', sans-serif;">Helena Lowe</h2>
-              <p class="teamdescriptions">Partnerships Director</p>
+              <p class="teamdescriptions">Director of Chapters</p>
               <a href="https://www.instagram.com/helenarlowe/" target="_blank"
                 ><img
                   class="teamsocials"
@@ -590,7 +366,7 @@
                 src="https://cdn.glitch.com/f23b8598-8c75-4b1a-83f7-6d57abc0ee65%2FGIRLS%20WHO%20CODE%20(7).png?v=1571121304034"
               />
               <h2 class="teamnames" style = "  font-family: 'Nanum Gothic', sans-serif;">Shamita Gurusu</h2>
-              <p class="teamdescriptions">Outreach Director</p>
+              <p class="teamdescriptions">Director of Operations</p>
               <a
                 href="https://www.instagram.com/thedisney_darling/"
                 target="_blank"
@@ -607,13 +383,14 @@
 
           </div>
         </div>
+        <br/>
+        <br/>
+
       </center>
     </section>
-    <br/>
-    <br/>
-    <br/>
-    <br/>
-    
+    -->
+  
+  <!-- FOOTER -->  
     <section>
       <center>
         <footer class="page-footer">

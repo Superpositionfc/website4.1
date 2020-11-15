@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -38,15 +39,32 @@
       href="https://fonts.googleapis.com/css?family=Nanum+Gothic&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+   integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+   crossorigin=""/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+   integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+   crossorigin=""></script>
+    <script src="script.js"></script>
   </head>
 
-  <body id="page-top">
+  <body onload="myFunction1000()" id="page-top">
+    
+    <div id="loader">   <center><img src="https://cdn.glitch.com/696a54c7-e493-465b-b503-c49262ef99ac%2FYO.png?v=1578731939570" class="rotate" width="150" height="150" /></center> </div>
+
+
+    
+  <div class = "animate-bottom" id = "everything" style="display:none; ">
+    <a name="top"></a>
     <nav
       class="navbar navbar-expand-lg navbar-light fixed-top py-3"
       id="mainNav"
     >
       <div class="container">
-        <a class="navbar-brand js-scroll-trigger" href="index.html"
+        <a class="navbar-brand js-scroll-trigger" href="/"
           >SUPERPOSITION</a
         >
         <button
@@ -63,17 +81,23 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto my-2 my-lg-0">
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="index.html">ABOUT</a>
+              <a class="nav-link" href="/#about">ABOUT</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="index.html">TEAM</a>
+              <a class="nav-link" href="story.html">OUR STORY</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="team.html">TEAM</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="chapters.html">CHAPTERS</a>
             </li>
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="hackathon.html">HACKATHON</a>
             </li>
             
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="covid.html">WORKSHOPS</a>
+              <a class="nav-link js-scroll-trigger" href="workshops.html">WORKSHOPS</a>
             </li>
 
             <li class="nav-item">
@@ -106,12 +130,12 @@
         >
           <div class="col-lg-10 align-self-end">
             <h1 class="text-lowercase text-white">
-              covid-19 efforts
+              workshops
             </h1>
           </div>
           <div class="col-lg-8 align-self-baseline">
             <h3 class="text-white-75 font-weight-light mb-5">
-              SUPPORTING STUDENTS & HEALTHCARE WORKERS
+             CREATING EDUCATIONAL OPPORTUNITIES
             </h3>
 <!--             <button
               class="button"
@@ -156,20 +180,16 @@
           <div class="w3-container w3-half w3">
             <p class="sectionheader" id="about">Our Initiative</p>
             <p align="left" class="sectiontext">
-              During the pandemic, Superposition is aiding both
-              <b class="emphasis">students</b> and <b class="emphasis">healthcare workers</b>.
-              We are hosting a 
+              As a part of our expansion, Superposition is hosting a 
               <b class="emphasis">free virtual workshop & panel series</b> for students of all ages and gender identities
-              to help our community continue their education in technical & practical skills.
+              to help our community further their STEM & career development skills.
             
-              So far, we have hosted
+              So far, we have hosted 33
               workshops like <b class="emphasis"> High School Programs & Internships, Professional Networking, and 
-              Intro to Python. </b> We've
-              also hosted a panel in collaboration with Girls Talk Tech featuring the organizers of the largest all-women and non-binary
-              hackathons from around the country: Technica, TechTogether Boston, Flawless Hacks, and Superposition. 
-              
-               
+              Intro to Python </b> with a total of 3500 attendees in 50 countries.
+                 
             </p>
+            <!--
             <p align="left" class="sectiontext">
               With our workshop series, we're <b class="emphasis"> fundraising to purchase personal protective equipment for healthcare workers </b> risking
               their lives on the frontlines of the pandemic. Without sufficient protective equipment, <b class="emphasis"> healthcare workers are at a greater
@@ -179,7 +199,7 @@
               equipment to those who need it. A $5 donation would be greatly appreciated!
     
             </p> 
-            
+            -->
             <left
               ><button
                 align="left"
@@ -194,9 +214,9 @@
               ><button
                 align="left"
                 class="button" id = "buttonmobile"
-                onclick="http://bit.ly/sp_covidfund"
+                onclick="https://calendar.google.com/calendar/u/0?cid=aGFja3BsdXMuaW9fY2xhc3Nyb29tM2FlZDMyYmZAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ"
               >
-                DONATE TO PROTECT A LIFE
+                EVENTS CALENDAR
               </button></left
             >
           </div>
@@ -209,7 +229,7 @@
         <div class="testimonials">
           <center>
             <br />
-            <p class="sectionheader">Upcoming Opportunities</p>
+            <p class="sectionheader">Past Opportunities</p>
           </center>
           
           <br />
