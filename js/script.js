@@ -37,6 +37,7 @@ animateValue("value4", 0, 4, 6000);
 animateValue("value5", 0, 119, 6000);
 animateValue("value6", 0, 484, 6000);
 
+
 // var slideIndex = 0;
 // showSlides();
 
