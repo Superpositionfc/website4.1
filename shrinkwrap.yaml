@@ -1,7 +1,7 @@
 dependencies:
   '@fortawesome/fontawesome-free': 5.10.2
   bootstrap: 4.3.1
-  jquery: 3.4.1
+  jquery: 3.5.0
   jquery.easing: 1.4.1
   magnific-popup: 1.1.0
 devDependencies:
@@ -2348,10 +2348,10 @@ packages:
     dev: false
     resolution:
       integrity: sha1-R5gsWDa9dY/UhJSSPEoQHvbpPjs=
-  /jquery/3.4.1:
+  /jquery/3.5.0:
     dev: false
     resolution:
-      integrity: sha512-36+AdBzCL+y6qjw5Tx7HgzeGCzC81MDDgaUP8ld2zhx58HdqXGoBd+tHdrBMiyjGQs0Hxs/MLZTu/eHNJJuWPw==
+      integrity: sha512-Xb7SVYMvygPxbFMpTFQiHh1J7HClEaThguL15N/Gg37Lri/qKyhRGZYzHRyLH8Stq3Aow0LsHO2O2ci86fCrNQ==
   /js-base64/2.5.1:
     dev: true
     resolution:
@@ -4553,7 +4553,7 @@ specifiers:
   gulp-rename: 1.4.0
   gulp-sass: 4.0.2
   gulp-uglify: 3.0.2
-  jquery: 3.4.1
+  jquery: 3.5.0
   jquery.easing: ^1.4.1
   magnific-popup: ^1.1.0
   merge-stream: 2.0.0

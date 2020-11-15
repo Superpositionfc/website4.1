@@ -661,6 +661,21 @@ a {
   transform: scale(1.1);
 }
 
+#areeta {
+  width: 80%;
+  height: 80%;
+  transition: 0.3s;
+  /* -webkit-box-shadow: 0px 3px 13px 0px rgba(0, 0, 0, 0.15); */
+  -moz-box-shadow: 0px 3px 13px 0px rgba(0, 0, 0, 0.15);
+  /* box-shadow: 0px 3px 13px 0px rgba(0, 0, 0, 0.15); */
+  position: relative;
+  top: 20px;
+}
+
+#areeta:hover {
+  transform: scale(1.1);
+}
+
 #workshops {
   width: 50%;
   height: 50%;
@@ -963,6 +978,7 @@ transition: 0.3s;
   margin-top: -1%;
   padding: 4.5%;
 }
+
 
 .sponsorhead {
   background-color: rgba(255, 194, 211, 0.5);
@@ -10739,9 +10755,9 @@ header.masthead2 h1 {
   }
 }
 @media (min-width: 1200px) {
-  header.masthead2 h1 {
-    font-size: 4.5rem;
-    font-family: playlistscript;
+  header.masthead h1 {
+    font-size: 6.5rem;
+    font-family: "playlistscript";
   }
 }
 header.masthead3 {
@@ -10922,7 +10938,7 @@ header.masthead7 {
   padding-top: 10rem;
   padding-bottom: calc(10rem - 72px);
   background-image: linear-gradient(rgba(237, 168, 206, 0.6), rgba(169, 200, 232, 0.6)),
-    url("https://cdn.glitch.com/530d92f6-375b-4a27-915c-2ea2fbce1d73%2FLRG_ALP01220.jpg?v=1589086710324");
+    url("https://cdn.glitch.com/530d92f6-375b-4a27-915c-2ea2fbce1d73%2FIMG_1554.jpg?v=1589322741694");
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
@@ -11119,7 +11135,8 @@ header.masthead11{
   padding-top: 10rem;
   padding-bottom: calc(10rem - 72px);
   background-image: linear-gradient(rgba(237, 168, 206, 0.6), rgba(169, 200, 232, 0.6)),
-    url("/img/chapters-masthead.jpg");
+    url("https://cdn.glitch.com/530d92f6-375b-4a27-915c-2ea2fbce1d73%2FCopy%20of%20_DSC9064.jpg?v=1604780797297");
+
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
@@ -11200,7 +11217,7 @@ header.masthead12 h3 {
 }
 @media (min-width: 1200px) {
   header.masthead12 h1 {
-    font-size: 4.5rem;
+    font-size: 6.5rem;
     font-family: "playlistscript";
   }
 }
@@ -11210,6 +11227,106 @@ header.masthead12 h3 {
     font-family: "playlistscript";
   }
 }
+
+/* TEAM PAGE */
+header.masthead13{
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  background-image: linear-gradient(rgba(237, 168, 206, 0.6), rgba(169, 200, 232, 0.6)),
+    url("https://cdn.glitch.com/530d92f6-375b-4a27-915c-2ea2fbce1d73%2F_DSC9203%20(2).jpg?v=1604786356992");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+}
+header.masthead13 h1 {
+  font-size: 2rem;
+  font-family: "playlistscript";
+}
+
+header.masthead13 h3 {
+  font-size: 2.0rem;
+  font-family: "Nanum Gothic";
+}
+
+@media (min-width: 992px) {
+  header.masthead13 {
+    height: 140vh;
+    min-height: 50rem;
+    padding-top: 72px;
+    padding-bottom: 0;
+  }
+  header.masthead13 p {
+    font-size: 1.15rem;
+  }
+  header.masthead13 h1 {
+    font-size: 3rem;
+    font-family: playlistscript;
+  }
+}
+@media (min-width: 1200px) {
+  header.masthead13 h1 {
+    font-size: 6.5rem;
+    font-family: "playlistscript";
+  }
+}
+@media (max-width: 480px) {
+  header.masthead13 h1 {
+    font-size: 6.5rem;
+    font-family: "playlistscript";
+  }
+}
+
+/* STORY PAGE */
+header.masthead14 {
+  padding-top: 10rem;
+  padding-bottom: calc(10rem - 72px);
+  background-image: linear-gradient(rgba(237, 168, 206, 0.6), rgba(169, 200, 232, 0.6)),
+    url("https://cdn.glitch.com/031b1ff8-fc8f-44a3-8955-846482730e3c%2FCopy%20of%20_DSC8920%20(1).jpg?v=1574047860849");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+}
+header.masthead14 h1 {
+  font-size: 2.25rem;
+  font-family: "playlistscript";
+}
+
+header.masthead14 h3 {
+  font-size: 2.0rem;
+  font-family: "Nanum Gothic";
+}
+
+@media (min-width: 992px) {
+  header.masthead14 {
+    height: 140vh;
+    min-height: 50rem;
+    padding-top: 72px;
+    padding-bottom: 0;
+  }
+  header.masthead14 p {
+    font-size: 1.15rem;
+  }
+  header.masthead14 h1 {
+    font-size: 3rem;
+    font-family: playlistscript;
+  }
+}
+@media (min-width: 1200px) {
+  header.masthead14 h1 {
+    font-size: 6.5rem;
+    font-family: "playlistscript";
+  }
+}
+@media (max-width: 480px) {
+  header.masthead14 h1 {
+    font-size: 6.5rem;
+    font-family: "playlistscript";
+  }
+}
+
+
 
 #chapters-map {
   /* display: grid; */

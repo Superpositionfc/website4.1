@@ -4,8 +4,8 @@ header.masthead {
   padding-bottom: calc(10rem - #{$navbar-height});
   // replace the masthead.jpg image in the /img directory to change the image
   // if the image name change, make sure to update the url path below!
-  background-image: linear-gradient(rgba(237, 168, 206, 0.6), rgba(169, 200, 232, 0.6)),
-    url("https://cdn.glitch.com/530d92f6-375b-4a27-915c-2ea2fbce1d73%2F_IMG_7785-4-2.jpg?v=1589248278810");
+  background-image: linear-gradient(rgba(237, 168, 206, 0.9), rgba(169, 200, 232, 0.9)),
+    url("https://cdn.glitch.com/530d92f6-375b-4a27-915c-2ea2fbce1d73%2F_IMG_7785-4-2.jpg?v=1589248278810"); 
    background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
