@@ -32,7 +32,7 @@ function animateValue(id, start, end, duration) {
 
 animateValue("value", 0, 300000, 6000);
 animateValue("value2", 0, 52, 6000);
-animateValue("value3", 0, 36, 6000);
+animateValue("value3", 0, 39, 6000);
 animateValue("value4", 0, 4, 6000);
 animateValue("value5", 0, 119, 6000);
 animateValue("value6", 0, 484, 6000);
@@ -267,7 +267,7 @@ function myFunctionSunday() {
 
 var myVar;
 function myFunction1000() {
-  myVar = setTimeout(showPage, 800);
+  myVar = setTimeout(showPage, 100);
 }
 
 function showPage() {
