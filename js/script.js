@@ -15,10 +15,11 @@ for (i = 0; i < acc.length; i++) {
 
 // COUNTING ANIMATION FOR STATISTICS
 function animateValue(id, start, end, duration) {
+  if(!step) step = 1;
   var range = end - start;
   var current = start;
-  var increment = end > start ? 1 : -1;
-  var stepTime = Math.abs(Math.floor(duration / range));
+  var increment = end > start ? step : -step;
+  var stepTime = Math.abs(Math.floor((duration * step) / range));
   var obj = document.getElementById(id);
   if(!obj) return;
   var timer = setInterval(function() {
@@ -30,9 +31,9 @@ function animateValue(id, start, end, duration) {
   }, stepTime);
 }
 
-animateValue("value", 0, 300000, 6000);
-animateValue("value2", 0, 52, 6000);
-animateValue("value3", 0, 39, 6000);
+animateValue("js-number-reached", 0, 300000, 6000, 1000);
+animateValue("js-number-countries", 0, 52, 6000);
+animateValue("js-number-chapters", 0, 39, 6000);
 animateValue("value4", 0, 4, 6000);
 animateValue("value5", 0, 119, 6000);
 animateValue("value6", 0, 484, 6000);
