@@ -14,7 +14,7 @@ for (i = 0; i < acc.length; i++) {
 }
 
 // COUNTING ANIMATION FOR STATISTICS
-function animateValue(id, start, end, duration) {
+function animateValue(id, start, end, duration, step) {
   if(!step) step = 1;
   var range = end - start;
   var current = start;
