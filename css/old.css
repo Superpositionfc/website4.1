@@ -1,3 +1,21 @@
+/* FONT FACES */
+@font-face {
+    font-family: "Now Bold";
+    src: url("/fonts/now.bold.otf") format("opentype");
+}
+
+@font-face {
+    font-family: "Now Medium";
+    src: url("/fonts/now.medium.otf") format("opentype");
+}
+
+/* Setting CSS Variables */
+:root {
+  --blue: #caf1ff;
+  --pink: #f794b8;
+  --gradient: linear-gradient(rgba(247, 148, 184, 0.6), rgba(202, 241, 255, 0.6));
+}
+
 #home2{
   display: none;
 }
@@ -213,7 +231,7 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 
 /* IMPACT COUNTER */
-#pinkbg {
+#pinkbg, .pinkbg {
   background-color: rgba(255, 194, 211, 0.5);
   opacity: 1;
 }
@@ -245,6 +263,38 @@ p, h1, h2, h3, h4, h5, h6 {
   opacity: .8;
   border-radius: 5px;
   transform: translate(0, -50%);
+}
+
+.button.disabled {
+  opacity: 0.5;
+  cursor: default;
+}
+
+.button.disabled:hover {
+  box-shadow: none;
+  background-color: #b5bcff;
+}
+
+.button-cta {
+  background-color: #b5bcff !important;
+  text-decoration: none !important;
+  padding: 1em !important;
+  display: inline-block;
+  font-family: "Nanum Gothic";
+  padding: 0.75em;
+  box-shadow: 0.1em 0.1em #828eff;
+  color: white;
+  border-radius: 5px;
+  opacity: 0.9;
+  transition: 0.1s ease;
+  margin: 0.5em;
+} 
+
+.button-cta:hover {
+  transform: translate(0.1em, 0.1em);
+  box-shadow: 0 0 #828eff, 
+    0.1em 0.1em 0.2em inset #828eff;
+  color: white;
 }
 
 /* WHAT IS SUPERPOSITION SECTION */
@@ -460,8 +510,11 @@ a {
   border-radius: 50%;
   transition: 0.3s;
   /* -webkit-box-shadow: 0px 3px 13px 0px rgba(0, 0, 0, 0.15); */
-  -moz-box-shadow: 0px 3px 13px 0px rgba(0, 0, 0, 0.15);
+  /* -moz-box-shadow: 0px 3px 13px 0px rgba(0, 0, 0, 0.15); */
   /* box-shadow: 0px 3px 13px 0px rgba(0, 0, 0, 0.15); */
+  padding: 0 !important;
+  margin: 0 !important;
+  border: 0.1em solid var(--blue);
 }
 
 .circle:hover {
@@ -11393,4 +11446,176 @@ header.masthead14 h3 {
   .sectionheader {
     font-size: 2em;
   }
+}
+
+/* CONFERENCE PAGE */
+header.masthead15{
+  padding-top: 10rem;
+  padding-bottom: calc(10rem - 72px);
+  background-image: linear-gradient(rgba(237, 168, 206, 0.6), rgba(169, 200, 232, 0.6)),
+    url("https://cdn.glitch.com/530d92f6-375b-4a27-915c-2ea2fbce1d73%2FIMG_1780.jpg?v=1607049009406");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+}
+header.masthead15 h1 {
+  font-size: 2.25rem;
+  font-family: "Now Bold";
+  line-height: 70%;
+}
+
+header.masthead15 h3 {
+  font-size: 2.0rem;
+  font-family: "Nanum Gothic";
+}
+
+@media (min-width: 992px) {
+  header.masthead15 {
+    height: 140vh;
+    min-height: 50rem;
+    padding-top: 72px;
+    padding-bottom: 0;
+  }
+  header.masthead15 p {
+    font-size: 1.15rem;
+  }
+  header.masthead15 h1 {
+    font-size: 3rem;
+  }
+}
+@media (min-width: 1200px) {
+  header.masthead15 h1 {
+    font-size: 6.5rem;
+  }
+}
+
+#conference-schedule {
+  background-color: #fff;
+  padding: 3%;
+}
+
+#conference-countdown {
+  font-size: 4em;
+  font-family: "Now Bold";
+}
+
+.conference-countdown .conference-countdown-caption {
+  font-size: 2em; 
+  font-family: "Now Medium";
+}
+
+.gradient-text {
+  background: var(--gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.card.conference-event-card {
+  background-color: rgba(255, 255, 255, 0.8);
+  background-color: #fff;
+  box-shadow: none;
+  /* border: 0.3em solid rgba(255, 255, 255, 0.5); */
+  border: none;
+  border-radius: 0;
+  margin: 3em 0;
+  border-radius: 0.7em;
+  position: relative;
+  max-width: 900px;
+  transition: 0.2s ease;
+}
+
+.card.conference-event-card:before {
+  content: "";
+  z-index: -2;
+  position: absolute;
+  top: -0.5em;
+  bottom: -0.5em;
+  left: -0.5em;
+  right: -0.5em;
+  background-image: var(--gradient);
+  border-radius: 1em;
+}
+
+.card.conference-event-card:after {
+  content: "";
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #fff;
+  border-radius: 0.7em;
+}
+
+.card.conference-event-card.bigger {
+  transform: scale(1.02);
+  box-shadow: 0.1em 0.1em 1em #eee;
+}
+
+.conference-event-card .card-title {
+  font-family: "Now Bold"; 
+  text-transform: uppercase;
+  text-align: left;
+  color: #a3acff;
+}
+
+.conference-event-card h5 {
+  font-family: "Now Medium"; 
+  text-transform: uppercase;
+  color: #a3acff;
+}
+
+.conference-event-card p {
+  font-family: "Nanum Gothic";
+  color: #222;
+}
+.conference-event-card .card-subtitle {
+  color: #ED96B6;
+  font-family: "Now Medium";
+}
+
+.conference-event-card .row {
+  align-items: center;
+}
+
+.conference-event-card .img-wrapper {
+  position: relative;
+  z-index: 2;
+}
+
+.conference-event-card .img-wrapper:after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: -0.1em;
+  bottom: -0.1em;
+  left: -0.1em;
+  right: -0.1em;
+  border-radius: 50%;
+  background-color: var(--blue);
+}
+
+.conference-event-card img {
+  height: 4em;
+  border-radius: 50%;
+}
+
+#conference-opportunities .row {
+  max-width: 1000px;
+  padding: 2em;
+  margin: 0.5em 2em;
+  background-color: #fff;
+  box-shadow: 0.1em 0.1em 1em #eee;
+  border-radius: 0.7em;
+  display: flex;
+  align-items: center;
+}
+
+.subheader {
+  text-align: left;
+  font-family: "Now Bold";
+  text-transform: uppercase;
+  color: #b5bcff;
 }
