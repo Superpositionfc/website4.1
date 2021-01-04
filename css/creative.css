@@ -1,6 +1,6 @@
 /*!
  * Start Bootstrap - Creative v5.1.8 (https://startbootstrap.com/template-overviews/creative)
- * Copyright 2013-2020 Start Bootstrap
+ * Copyright 2013-2021 Start Bootstrap
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-creative/blob/master/LICENSE)
  */
 
@@ -3730,6 +3730,7 @@ input[type="button"].btn-block {
   background-color: #f4623a;
   border: 0;
   border-radius: 1rem;
+  -webkit-transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
   transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
   -webkit-appearance: none;
   appearance: none;
@@ -3737,6 +3738,7 @@ input[type="button"].btn-block {
 
 @media (prefers-reduced-motion: reduce) {
   .custom-range::-webkit-slider-thumb {
+    -webkit-transition: none;
     transition: none;
   }
 }
@@ -3761,6 +3763,7 @@ input[type="button"].btn-block {
   background-color: #f4623a;
   border: 0;
   border-radius: 1rem;
+  -moz-transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
   transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
   -moz-appearance: none;
   appearance: none;
@@ -3768,6 +3771,7 @@ input[type="button"].btn-block {
 
 @media (prefers-reduced-motion: reduce) {
   .custom-range::-moz-range-thumb {
+    -moz-transition: none;
     transition: none;
   }
 }
@@ -3795,12 +3799,14 @@ input[type="button"].btn-block {
   background-color: #f4623a;
   border: 0;
   border-radius: 1rem;
+  -ms-transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
   transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
   appearance: none;
 }
 
 @media (prefers-reduced-motion: reduce) {
   .custom-range::-ms-thumb {
+    -ms-transition: none;
     transition: none;
   }
 }
@@ -9605,12 +9611,40 @@ html {
   color: #8b2455;
 }
 
+#mainNav .navbar-nav .nav-item {
+  display: flex;
+  align-items: center;
+}
+
 #mainNav .navbar-nav .nav-item .nav-link, #mainNav .navbar-nav .nav-item .dropdown-item {
   color: #8b2455;
   font-family: 'Nanum Gothic', sans-serif;
   font-weight: 700;
   font-size: 0.9rem;
   padding: 0.75rem 0;
+}
+
+#mainNav .navbar-nav .nav-item .nav-link.button-cta, #mainNav .navbar-nav .nav-item .dropdown-item.button-cta {
+  font-family: "Nanum Gothic";
+  padding: 0.75em;
+  padding-right: 0.75em !important;
+  background-color: #b5bcff !important;
+  box-shadow: 0.1em 0.1em #9ca5ff;
+  color: white !important;
+  border-radius: 5px;
+  opacity: 0.9 !important;
+  transition: 0.2s ease;
+  margin: 0;
+}
+
+#mainNav .navbar-nav .nav-item .nav-link.button-cta:hover, #mainNav .navbar-nav .nav-item .nav-link.button-cta.cta-active, #mainNav .navbar-nav .nav-item .dropdown-item.button-cta:hover, #mainNav .navbar-nav .nav-item .dropdown-item.button-cta.cta-active {
+  transform: translate(0.1em, 0.1em);
+  box-shadow: 0 0 #828eff, 0.1em 0.1em 0.2em inset #828eff;
+  color: white !important;
+}
+
+#mainNav .navbar-nav .nav-item .nav-link.button-cta.cta-active, #mainNav .navbar-nav .nav-item .dropdown-item.button-cta.cta-active {
+  cursor: default;
 }
 
 #mainNav .navbar-nav .nav-item .nav-link:hover, #mainNav .navbar-nav .nav-item .nav-link:active, #mainNav .navbar-nav .nav-item .dropdown-item:hover, #mainNav .navbar-nav .nav-item .dropdown-item:active {

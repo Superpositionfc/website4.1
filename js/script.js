@@ -32,8 +32,8 @@ function animateValue(id, start, end, duration, step) {
 }
 
 animateValue("js-number-reached", 0, 300000, 6000, 1000);
-animateValue("js-number-countries", 0, 52, 6000);
-animateValue("js-number-chapters", 0, 39, 6000);
+animateValue("js-number-countries", 0, 54, 6000);
+animateValue("js-number-chapters", 0, 46, 6000);
 animateValue("value4", 0, 4, 6000);
 animateValue("value5", 0, 119, 6000);
 animateValue("value6", 0, 484, 6000);
@@ -83,6 +83,24 @@ $(document).on("scroll", function() {
       $(tag).addClass("visible");
     } else {
       $(tag).removeClass("visible");
+    }
+  }
+});
+
+$(document).on("scroll", function() {
+  var pageTop = $(document).scrollTop();
+  var pageBottom = pageTop + $(window).height();
+  var tags = $(".conference-event-card");
+
+  for (var i = 0; i < tags.length; i++) {
+    var tag = tags[i];
+
+    if ($(tag).position().top < pageTop - $(window).height() + $(tag).height() + 100) {
+      // console.log(i, $(tag).position().top)
+      // console.log(i, pageTop - $(window).height());
+      $(tag).addClass("bigger");
+    } else {
+      $(tag).removeClass("bigger");
     }
   }
 });
@@ -275,4 +293,22 @@ function showPage() {
   document.getElementById("loader").style.display = "none";
   document.getElementById("everything").style.display = "block";
   document.getElementById("headerwork").style.height = "100vh";
+  showConferenceTimer();
+}
+
+function showConferenceTimer() {
+  var timer = document.getElementById("conference-countdown");
+  var fmt = function(n) { return n > 9 ? n : "0" + n };
+  if(timer) {
+    setInterval(function() {
+      var conferenceDate = new Date(2021, 0, 16, 18);
+      var now = new Date();
+      var diff = conferenceDate.getTime() - now.getTime();
+      var days = Math.floor(diff / (1000 * 3600 * 24));
+      var hours = Math.floor(diff / (1000 * 3600)) - days * 24;
+      var minutes = Math.floor(diff / (1000 * 60)) - (days * 24 * 60) - (hours * 60);
+      var seconds = Math.floor(diff / (1000)) - (days * 24 * 3600) - (hours * 3600) - (minutes * 60);
+      timer.innerHTML = fmt(days) + ":" + fmt(hours) + ":" + fmt(minutes) + ":" + fmt(seconds);
+    }, 1000)
+  }
 }
