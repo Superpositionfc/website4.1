@@ -89,7 +89,7 @@ p, h1, h2, h3, h4, h5, h6 {
 /* TEXT */
 @media screen and (max-width: 600px) {
   .sectionheader {
-    font-size: 10%;
+    font-size: 5%;
   }
 }
 
@@ -130,15 +130,15 @@ p, h1, h2, h3, h4, h5, h6 {
 
 /* ACTUAL HEADER */
 .sectionheader {
-  font-family: "playlistscript";
+  font-family: "Now Bold";
   color: #a3acff;
   letter-spacing: 1px;
   transform: translate(0, 40%);
 }
 
 #title {
-  font-family: "playlistscript";
-  font-size: 700%;
+  font-family: "Now Bold";
+  font-size: 350%;
   letter-spacing: 4px;
 }
 .parallax {
@@ -220,7 +220,7 @@ p, h1, h2, h3, h4, h5, h6 {
   margin: 2%;
 }
 .sectionheader {
-  font-size: 400%;
+  font-size: 350%;
   margin: 4.5%;
 }
 
@@ -338,11 +338,20 @@ p, h1, h2, h3, h4, h5, h6 {
   padding: 1%;
 }
 
+/* CHAPTER NAMES */
+
+.chapternames {
+  margin: 3%;
+}
+.chapternamestext {
+  padding: 1%;
+}
+
 .accordion {
    opacity: .6;
   border-radius: 7px;
-  background-color: rgba(255, 194, 211, 0.5);
-  color: #8b2455;
+  background-color: #CAF1FF;
+  color: #19AEE1;
   cursor: pointer;
   padding: 18px;
   width: 100%;
@@ -355,16 +364,16 @@ p, h1, h2, h3, h4, h5, h6 {
 
 
 .accordion:hover {
-  background-color: #ffc3d4;
+  background-color: #8EE2FF;
 }
 
 button:hover{
-  background-color: #a3acff;
+  background-color: #AAB3FF;
 }
 
 .accordion:after {
   content: '\002B';
-  color: #8b2455;
+  color: #19AEE1;
   font-weight: bold;
   float: right;
   margin-left: 5px;
@@ -403,7 +412,7 @@ button:hover{
 /*   transition: 0.4s; */
 /* } */
 #hoveryo:hover {
-  background-color: #ffc3d4;
+  background-color: #8EE2FF;
 } 
 
 /* .accordion:after {
@@ -10727,8 +10736,8 @@ header.masthead h1 {
     font-family: 'Nanum Gothic', sans-serif;
   }
   .sectionheader{
-    margin-bottom: 10%;
-    font-family: "playlistscript";
+    margin-bottom: 5%;
+    font-family: "Now Bold";
   }
   #buttonmobile{
     margin-top: 15%;
@@ -11444,7 +11453,7 @@ header.masthead14 h3 {
 
 @media screen and (max-width: 600px) {
   .sectionheader {
-    font-size: 2em;
+    font-size: 1em;
   }
 }
 
