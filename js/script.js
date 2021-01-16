@@ -293,7 +293,7 @@ function showPage() {
   document.getElementById("loader").style.display = "none";
   document.getElementById("everything").style.display = "block";
   document.getElementById("headerwork").style.height = "100vh";
-  showConferenceTimer();
+  // showConferenceTimer();
 }
 
 function showConferenceTimer() {
