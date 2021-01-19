@@ -15,13 +15,13 @@ for (i = 0; i < acc.length; i++) {
 
 // COUNTING ANIMATION FOR STATISTICS
 function animateValue(id, start, end, duration, step) {
+  var obj = document.getElementById(id);
+  if(!obj) return;
   if(!step) step = 1;
   var range = end - start;
   var current = start;
   var increment = end > start ? step : -step;
   var stepTime = Math.abs(Math.floor((duration * step) / range));
-  var obj = document.getElementById(id);
-  if(!obj) return;
   var timer = setInterval(function() {
     current += increment;
     obj.innerHTML = current;
@@ -37,6 +37,10 @@ animateValue("js-number-chapters", 0, 49, 6000);
 animateValue("value4", 0, 4, 6000);
 animateValue("value5", 0, 119, 6000);
 animateValue("value6", 0, 484, 6000);
+animateValue("js-conf-registration-reach", 0, 2550, 3000, 50);
+animateValue("js-conf-country-reach", 0, 78, 3000);
+animateValue("js-conf-states-reach", 0, 47, 3000);
+
 
 
 // var slideIndex = 0;
