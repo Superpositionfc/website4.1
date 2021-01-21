@@ -260,7 +260,7 @@ p, h1, h2, h3, h4, h5, h6 {
   font-size: 16px;
   margin: 20px 5px;
   cursor: pointer;
-  opacity: .8;
+  opacity: .9;
   border-radius: 5px;
   transform: translate(0, -50%);
 }
@@ -11514,21 +11514,10 @@ header.masthead15 h3 {
   font-family: "Now Medium";
 }
 
-#conference-reach-statistics div {
-  font-size: 2em;
-  font-weight: bold;
-}
-
 .gradient-text {
   background: var(--gradient);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-}
-
-.purple-shadow-text {
-  -webkit-text-fill-color: rgba(0, 0, 0, 0);
-  -webkit-text-stroke: 0.02em #a3acff;
-  text-shadow: 0.05em 0.05em 0 #a3acffb6;
 }
 
 .card.conference-event-card {
@@ -11638,30 +11627,4 @@ header.masthead15 h3 {
   font-family: "Now Bold";
   text-transform: uppercase;
   color: #b5bcff;
-}
-
-#conference-prizes {
-  max-width: 1000px;
-  margin: auto;
-}
-
-#conference-prizes div {
-  margin-bottom: -0.35em;
-}
-
-#conference-prizes img {
-  width: 100%;
-  max-height: 90vh;
-  object-fit: contain;
-  padding: 0;
-}
-
-#conference-sponsors img {
-  object-fit: contain; 
-  width: 100%;
-  transition: 0.3s ease;
-}
-
-#conference-sponsors img:hover {
-  transform: scale(1.1);
 }
