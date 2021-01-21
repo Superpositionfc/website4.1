@@ -11514,6 +11514,11 @@ header.masthead15 h3 {
   font-family: "Now Medium";
 }
 
+#conference-reach-statistics div {
+  font-size: 2em;
+  font-weight: bold;
+}
+
 .gradient-text {
   background: var(--gradient);
   -webkit-background-clip: text;
