@@ -11525,6 +11525,12 @@ header.masthead15 h3 {
   -webkit-text-fill-color: transparent;
 }
 
+.purple-shadow-text {
+  -webkit-text-fill-color: rgba(0, 0, 0, 0);
+  -webkit-text-stroke: 0.02em #a3acff;
+  text-shadow: 0.05em 0.05em 0 #a3acffb6;
+}
+
 .card.conference-event-card {
   background-color: rgba(255, 255, 255, 0.8);
   background-color: #fff;
@@ -11632,4 +11638,14 @@ header.masthead15 h3 {
   font-family: "Now Bold";
   text-transform: uppercase;
   color: #b5bcff;
+}
+
+#conference-sponsors img {
+  object-fit: contain; 
+  width: 100%;
+  transition: 0.3s ease;
+}
+
+#conference-sponsors img:hover {
+  transform: scale(1.1);
 }
