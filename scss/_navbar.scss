@@ -10,14 +10,14 @@ html {
   .navbar-brand {
     font-family: 'Nanum Gothic', sans-serif;
     font-weight: $font-weight-bold;
-    color: #8b2455;
+    color: #FF8AB5; 
   }
   .navbar-nav {
     .nav-item {
       display: flex;
       align-items: center;
       .nav-link, .dropdown-item {
-        color: #8b2455;
+        color: #F794B8;
         font-family: 'Nanum Gothic', sans-serif;
         font-weight: $font-weight-bold;
         font-size: 0.9rem;
@@ -67,7 +67,7 @@ html {
     .navbar-brand {
       color: fade-out($white, .3);
       &:hover {
-        color: #f794b8;
+        color: #FF8AB5;
       }
     }
     .navbar-nav {
@@ -76,14 +76,14 @@ html {
           color: fade-out($white, .3);
           padding: 0 1rem;
           &:hover {
-            color: #f794b8;
+            color: #FF8AB5;
           }
         }
         .dropdown-item {
-            color: #8b2455;
+            color: #f794b8;
             padding: 0 1rem;
             &:hover {
-              color: #f794b8;
+              color: #FF8AB5;
             }
         }
         &:last-child {
@@ -99,17 +99,17 @@ html {
       background-color: $white;
       opacity: 0.9;
       .navbar-brand {
-        color: #8b2455;
+        color: #F794B8;
         &:hover {
-          color: #f794b8;
+          color: #FF8AB5;
         }
       }
       .navbar-nav {
         .nav-item {
           .nav-link {
-            color: #8b2455;
+            color: #F794B8;
             &:hover {
-              color: #f794b8;
+              color: #FF8AB5;
             }
           }
         }
@@ -118,6 +118,6 @@ html {
   }
 }
 a {
-  color: #8b2455;
+  color: #F794B8;
   background: transparent !important;
 }
