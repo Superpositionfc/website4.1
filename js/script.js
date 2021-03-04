@@ -31,6 +31,7 @@ function animateValue(id, start, end, duration, step) {
   }, stepTime);
 }
 
+
 animateValue("js-number-reached", 0, 300000, 6000, 1000);
 animateValue("js-number-countries", 0, 104, 6000);
 animateValue("js-number-chapters", 0, 71, 6000);
