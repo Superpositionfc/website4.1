@@ -90,13 +90,14 @@
                 <a class="dropdown-item" href="photos.html">PHOTOS</a>
               </div>
             </li>
-            <li class="nav-item dropdown">
+              <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">
                 PROGRAMS
               </a>
               <div class="dropdown-menu">
                 <a class="dropdown-item" href="chapters.html">CHAPTERS</a>
-                <a class="dropdown-item" href="hackathon.html">HACKATHON</a>
+              <!--  <a class="dropdown-item" href="hackathon.html">HACKATHON</a> -->
+                <a class="dropdown-item" href="conference.html">CONFERENCE</a>
                 <a class="dropdown-item" href="workshops.html">WORKSHOPS</a>
               </div>
             </li>
@@ -108,9 +109,9 @@
                 <a class="dropdown-item" href="sponsors.html">SPONSORS</a>
                 <a class="dropdown-item" href="partners.html">PARTNERS</a>
               </div>
-            </li> 
+            </li>
             <li class="nav-item">
-              <a class="nav-link button-cta" href="conference.html">CONFERENCE</a>
+              <a class="nav-link button-cta" href="hackathon.html">HACKATHON</a>
             </li>
           </ul>
         </div>
@@ -130,8 +131,26 @@
           </div>
           <div class="col-lg-8 align-self-baseline">
             <h3 class="text-white-75 font-weight-light mb-5" id="locationsub">
-              Uber HQ | 2021
+              Virtual | April 9 - 11, 2021
             </h3>
+            <button
+              class="button"
+              onclick="location.href='https://www.eventbrite.com/e/superposition-v-hackathon-tickets-141635424367?aff=SPWebsite'" id="attendeebutton"
+            >
+              REGISTRATION
+            </button>
+            <button
+              class="button"
+              onclick="location.href='https://bit.ly/sp5_volapp'" id="volunteerbutton"
+            >
+              VOLUNTEERS
+            </button>
+            <button
+              class="button"
+              onclick="location.href='https://bit.ly/sp5_aa'" id="ambassadorbutton"
+            >
+              AMBASSADORS
+            </button>
             
           </div>
         </div>
@@ -169,17 +188,21 @@
           <div class="sponsorssubtitle">
             
               <p>
-                Superposition is the <b class="emphasis">Bay Area's largest all-women & non-binary hackathon</b>. At Superposition IV, we hosted 220 students from across
-               8 states and 2 countries, of which 77% were first-time hackathon
-               attendees. 
-
+                Superposition V is the <b class="emphasis">Bay Area's largest all-women & non-binary hackathon</b>. This year, we're going international! Join us April 9 - 11 for a weekend of workshops, networking, and prizes. 
+                77% of our attendees are first-time hackers, and 35% are first-time programmers. No coding experience is required. </p> 
+                <!--
               Our hackathon is
               <b class="emphasis">free</b> to attend, and wi-fi, food, swag, and
               workspaces will be provided. Bring
               <b class="emphasis">your passion</b> for computer science and
               we'll take care of the rest! It's the
               <b class="emphasis">perfect opportunity</b> for anyone to take
-                their next step forward in tech. </p>
+                their next step forward in tech. -->
+            <p>
+              This year's theme is <b class="emphasis">#BreakingBoundaries</b>. Building empathy. Bridging social divides. Shattering the glass ceiling for women in tech. 
+              Superposition started in October 2016 as the Bay Area's largest all-women and non-binary hackathon, but we didn't want to stop at a 24-hour hackathon. After Superposition IV, we launched our expansion to <b class="emphasis"><a href="chapters.html">chapters</a>, <a href="workshops.html">virtual events</a></b>, and <b class="emphasis">mentorship programs</b>. Now, we're making our hackathon bigger and better than ever!
+
+            </p> 
 
             <br/>
             <left
@@ -197,22 +220,53 @@
                 class="button" id = "buttonmobile2"
                 onclick="location.href = 'https://manage.devpost.com/challenges/9316-superposition-iv/dashboard/submissions'"
               >
-                ATTENDEE PROJECTS
-              </button></right
-            >
+                PAST PROJECTS
+              </button></right>
           </div>
           
         </div>
       </section>
     </center>
-
+    <center>
+          <section id="conference-opportunities" class="d-flex flex-column align-items-center pb-5 pt-0 px-5">
+        <p class="sectionheader" id="opportunities">OPPORTUNITIES</p>
+        <!-- STYLIZE TO CARDS? -->
+           <div class="row">
+          <div class="col-md-4 align-self-center">
+            <h3 class="subheader text-center gradient-text">Register for Superposition V</h3>
+            <a class="button-cta d-block" href="https://www.eventbrite.com/e/superposition-v-hackathon-tickets-141635424367" target="_blank">APPLY</a>
+          </div>
+          <div class="col-md-8">
+            <p align="left">
+              Whether you're a beginner coder or seasoned hackathon veteran, Superposition V has something for you! We'll offer introductory workshops cover
+             Python, web development, and more, as well as networking opportunities for you to meet future friends, colleagues & co-founders. Register today! You won't regret it.
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4 text-center align-self-center">
+            <h3 class="subheader text-center gradient-text">Become an Ambassador</h3>
+            <a class="button-cta d-block" href="https://bit.ly/sp5_ainfo" target="_blank">PROGRAM INFO</a>
+            <a class="button-cta d-block" href="https://bit.ly/sp5_aa" target="_blank">APPLY</a>
+          </div>
+          <div class="col-md-8">
+            <p align="left">
+              Become a Superposition V ambassador and introduce women into technology! We offer two Ambassador Tracks: Internship & Fellowship. Both interns and fellows have access to exclusive leadership 
+              workshops, earn Presidential Volunteer Service Award hours, compete for gift cards, and more. 
+            </p>
+          </div>
+        </div>
+        <hr />
+   
+      </section>
+    </center>
 
     <center>
       <section id="testimonials">
-        <div class="testimonials" id="pinkbg">
+        <div class="testimonials">
           <center>
-            <br />
-            <p class="sectionheader">TESTIMONIALS</p>
+            
+          <p class="sectionheader">TESTIMONIALS</p>
           </center>
           <center>
             <div class="container">
@@ -224,10 +278,9 @@
                     id="size"
                   />
                   <div class="card-body">
-                    <br />
                     <h5 class="card-title" style = "  font-family: 'Nanum Gothic', sans-serif;">LEESEL FRASER</h5>
-                    <h6 style = "  font-family: 'Nanum Gothic', sans-serif;">City University of New York '22</h6>
-                    <br />
+                    <h6 style = "font-family: 'Nanum Gothic', sans-serif;">City University of New York '22</h6>
+                    <br/>
                     <p class="card-text" align="left">
                       "My most important takeaway from Superposition IV was that there are many others out there, 
                       even miles away, that are willing to support me and I do not have to get through the tech 
@@ -254,7 +307,7 @@
                       <div class="columnmodal rightmodal">
                         <h5 class="card-title" style = "  font-family: 'Nanum Gothic', sans-serif;">LEESEL FRASER</h5>
                     <h6 style = "  font-family: 'Nanum Gothic', sans-serif;">City University of New York '22</h6>
-                        <br />
+                      <br/>
                         <p class="modalquotes" align="left">
                           "My most important takeaway from Superposition IV was that there are many others out there, 
                       even miles away, that are willing to support me and I do not have to get through the tech 
@@ -270,14 +323,13 @@
 
                 <div class="card my-3" id="myBtn2">
                   <img
-                    src="https://cdn.glitch.com/031b1ff8-fc8f-44a3-8955-846482730e3c%2FCopy%20of%20_DSC8958.jpg?v=1574047868342"
+                    src="https://cdn.glitch.com/531a4046-e239-4378-b2aa-51d9953afd98%2FIMG_1849.jpg?v=1614883310105"
                     class="card-img-top"
                   />
                   <div class="card-body">
-                    <br />
                     <h5 class="card-title" style = "  font-family: 'Nanum Gothic', sans-serif;">MEGAN JACOB</h5>
                     <h6 style = "  font-family: 'Nanum Gothic', sans-serif;">First-Time Hacker</h6>
-                    <br />
+                     <br/>
                     <p class="card-text" align="left">
                       "I have always been reluctant to pursue computer science due to the male dominance. However, after seeing this 
                       gathering of women I felt inspired, knowing that there were other women who also shared my passions. Seeing this 
@@ -293,7 +345,7 @@
                     <div class="rowmodal">
                       <div class="columnmodal leftmodal">
                         <img
-                          src="https://cdn.glitch.com/031b1ff8-fc8f-44a3-8955-846482730e3c%2FCopy%20of%20_DSC8958.jpg?v=1574047868342"
+                          src="https://cdn.glitch.com/531a4046-e239-4378-b2aa-51d9953afd98%2FIMG_1849.jpg?v=1614883310105"
                           class="card-img-top"
                           id="sizemodal"
                         />
@@ -301,7 +353,7 @@
                       <div class="columnmodal rightmodal">
                         <h5 class="card-title" style = "  font-family: 'Nanum Gothic', sans-serif;">MEGAN JACOB</h5>
                     <h6 style = "  font-family: 'Nanum Gothic', sans-serif;">First-Time Hacker</h6>
-                    <br />
+                          <br/>
                     <p class="card-text" align="left">
                       "I have always been reluctant to pursue computer science due to the male dominance. However, after seeing this 
                       gathering of women I felt inspired, knowing that there were other women who also shared my passions. Seeing this 
@@ -314,14 +366,13 @@
 
                 <div class="card my-3" id="myBtn3">
                   <img
-                    src="https://cdn.glitch.com/696a54c7-e493-465b-b503-c49262ef99ac%2FCopy%20of%20_DSC8942%20(2).jpg?v=1577954395726"
+                    src="https://cdn.glitch.com/531a4046-e239-4378-b2aa-51d9953afd98%2FIMG_1780.jpg?v=1614883378623"
                     class="card-img-top"
                   />
                   <div class="card-body">
-                    <br />
                     <h5 class="card-title" style = "  font-family: 'Nanum Gothic', sans-serif;">HANNAH GONZALES</h5>
-                    <h6 style = "  font-family: 'Nanum Gothic', sans-serif;">University of Pennsylvania SEAS '23'</h6>
-                    <br />
+                    <h6 style = "  font-family: 'Nanum Gothic', sans-serif;">University of Pennsylvania SEAS '23</h6>
+                    <br/>
                     <p class="card-text" align="left">
                       Superposition IV empowered me by creating a safe space where I thought my ideas were valued. I
                       t allowed me to explore more about my passions and meet other young, talented, and intelligent women. 
@@ -338,14 +389,14 @@
                     <div class="rowmodal">
                       <div class="columnmodal leftmodal">
                         <img
-                          src="https://cdn.glitch.com/696a54c7-e493-465b-b503-c49262ef99ac%2FCopy%20of%20_DSC8942%20(2).jpg?v=1577954395726"
+                          src="https://cdn.glitch.com/531a4046-e239-4378-b2aa-51d9953afd98%2FIMG_1780.jpg?v=1614883378623"
                           class="card-img-top"
                           id="sizemodal"
                         />
                       </div>
                       <div class="columnmodal rightmodal">
                         <h5 class="card-title" style = "  font-family: 'Nanum Gothic', sans-serif;">HANNAH GONZALES</h5>
-                    <h6 style = "  font-family: 'Nanum Gothic', sans-serif;">University of Pennsylvania SEAS '23'</h6>
+                    <h6 style = "  font-family: 'Nanum Gothic', sans-serif;">University of Pennsylvania SEAS '23</h6>
                     <br />
                     <p class="card-text" align="left">
                       Superposition IV empowered me by creating a safe space where I thought my ideas were valued. I
@@ -360,11 +411,7 @@
               </div>
             </div>
           </center>
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
+          
         </div>
       </section>
     </center>
@@ -399,7 +446,7 @@
                   </p>
                 </div>
 
-                <button class="accordion">WHAT SHOULD I BRING?</button>
+             <!--   <button class="accordion">WHAT SHOULD I BRING?</button>
                 <div class="panel">
                   <p align="left" class="faqstext">
                     A valid ID (like a school ID), signed and completed waivers, a laptop, charger(s), 
@@ -409,17 +456,28 @@
                   please contact a Superposition organizer to make special arrangements. 
                   You must be signed out by a parent. 
                   </p>
-                </div>
+                </div> -->
 
                 <button class="accordion">WHO CAN ATTEND?</button>
                 <div class="panel">
                   <p align="left" class="faqstext">
-                   All female-identifying, trans or non-binary high school and college students are 
-                  welcome to come as an attendee. Although we do NOT accept males as attendees, 
-                  we wholeheartedly welcome all genders to volunteer as a <a href=https://docs.google.com/forms/d/e/1FAIpQLSfMpukAsQdjEL-1Ha8P2Q-Lao-7Tx8DC3AzBKZAFlJeKlYPJg/viewform>
-                  mentor, workshop leader, judge </a> or Campus Ambassador!
+                   This year, we're opening Superposition V to hackathon enthusiasts worldwide! We only accept female-identifying and non-binary students in high school and college as attendees.
+                    However, we encourage people of all identities to support Superposition as a <a href="https://bit.ly/sp5_volapp">
+                  mentor, workshop leader, judge, speaker </a> or <a href="https://bit.ly/sp5_aa">ambassador</a>!
+                    
+
                   </p>
                 </div>
+                <button class="accordion">
+                  HOW DO I SIGN UP?
+                </button>
+                <div class="panel">
+                  <p align="left" class="faqstext">
+                    Register
+                      <a href="https://www.eventbrite.com/e/superposition-v-hackathon-tickets-141635424367">here</a> by April 9th! It'll take less than five minutes.
+                  </p>
+                </div>
+                
                 <button class="accordion">HOW DO I FORM A TEAM?</button>
                 <div class="panel">
                   <p align="left" class="faqstext">
@@ -429,25 +487,27 @@
                     but there will be workshops and mentors on-hand to help you.
                   </p>
                 </div>
-                <button class="accordion">
-                 DO YOU OFFER TRAVEL REIMBURSEMENTS?
+                <!--  <button class="accordion">
+               DO YOU OFFER TRAVEL REIMBURSEMENTS?
                 </button>
                 <div class="panel">
                   <p align="left" class="faqstext">
                     Yes! We have separate travel reimbursement programs for high school and college students. Find more info
                     <a href="bit.ly/sp4_grant"> here. </a>
                   </p>
-                </div>
-              </div>
+                </div> -->
+                
+                
+              </div> 
               <div class="column">
                 <button class="accordion">
                   DO YOU HAVE A CODE OF CONDUCT?
                 </button>
                 <div class="panel">
                   <p align="left" class="faqstext">
-                  Yes, we do! To ensure that Superposition IV is welcoming, all
+                  Yes, we do! To ensure that Superposition V is welcoming, all
                   attendees, mentors, and volunteers are required to abide by
-                  our <a href="https://docs.google.com/document/d/1LM16VQJIpSRL2Sm_8-8cuPYkXyilBU5zEUgEB4tWK6w/edit?usp=sharing">
+                  our <a href="https://bit.ly/sp5_code">
                   code of conduct</a>.
                   </p>
                 </div>
@@ -455,12 +515,13 @@
                 <button class="accordion">HOW CAN I HELP?</button>
                 <div class="panel">
                   <p align="left" class="faqstext">
-                    We are looking for mentors, workshop leaders, women in tech
-                  panelists, and sponsors! If you are interested in learning
-                  more about how you can help support Superposition, please
-                  email us at <a href="mailto:info@superposition.tech">info@superposition.tech</a>. 
-                  Sign up to be a mentor, judge, or women in tech panelist
-                      <a href="https://bit.ly/sp4_volunteer">here</a>.
+                    Thank you for your interest in supporting Superposition! We're
+                    currently looking for more mentors, judges, workshop leaders, and Women in Tech panelists,
+                    which you can apply for  <a href="https://bit.ly/sp5_volapp">here</a>.
+                    In addition, we're always looking for monetary and in-kind sponsors! Feel free to view our
+                    Sponsorship Prospectus <a href = "https://drive.google.com/file/d/1u1erhxRFezMPYaKMdL8hYSwe_ZUxi_RW/view">here</a>
+                    and email mingxin@superposition.tech with any sponsorship inquiries.
+                  
                   </p>
                 </div>
 
@@ -468,8 +529,8 @@
                 <div class="panel">
                   <p align="left" class="faqstext">
                     You need absolutely no prior experience to attend this
-                    hackathon. There will be mentors throughout the day to help
-                    you out!
+                    hackathon. In fact, 77% of Superposition IV attendees had never attended a hackathon, and 35% had never programmed.
+                    We'll have plenty of workshops and mentors to help you out!
                   </p>
                 </div>
 
@@ -484,23 +545,16 @@
                   </p>
                 </div>
 
+                
                 <button class="accordion">
-                  HOW DO I SIGN UP?
+                  DO I HAVE TO STAY ONLINE THE ENTIRE TIME? 
                 </button>
                 <div class="panel">
                   <p align="left" class="faqstext">
-                    Sign up
-                      <a href="https://bit.ly/sp4_app">here</a> by February 16th!
-                  </p>
-                </div>
-                <button class="accordion">
-                  DO I HAVE TO STAY THE ENTIRE TIME? 
-                </button>
-                <div class="panel">
-                  <p align="left" class="faqstext">
-                    We highly encourage attendees to stay overnight, but if you must leave early
-                    or for any portion of the hackathon, please notify us in advance at <a href="mailto:info@superposition.tech">
-                    info@superposition.tech</a>. If you are under 18, you must be signed out by a parent with an ID. 
+                   Not at all! You can work on your project at any time during the project submission period. Feel free
+                    to take breaks to grab a snack, spend time with your family, or just relax! Attendees are only expected to
+                    be at Opening and Closing Ceremony, but attendance at our workshops, Women in Tech panel, and networking sessions
+                    are highly encouraged.
                   </p>
                 </div>
                 
@@ -514,7 +568,7 @@
        <br />
     </section>
     
-    <!-- Slideshow container -->
+    <!-- Slideshow container 
      <center>
       <section id="slider">
         <input type="radio" id="trigger1" name="slider"  checked autofocus/>
@@ -553,7 +607,7 @@
         <label for="trigger9"></label>
         <div class="slide bg9"></div>
       </section>
-    </center>
+    </center> -->
     
     <!--
     <center>

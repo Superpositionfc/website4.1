@@ -426,9 +426,7 @@ button:hover{
   /*max-width: 100%;
   height: auto;*/
   border-radius: 15px; important
-  /* -webkit-box-shadow: 0px 3px 13px 0px rgba(0, 0, 0, 0.15); */
-  -moz-box-shadow: 0px 3px 13px 0px rgba(0, 0, 0, 0.15);
-  /* box-shadow: 0px 3px 13px 0px rgba(0, 0, 0, 0.15); */
+ 
 }
 
 .statetag {
@@ -450,6 +448,7 @@ button:hover{
 .chapter-block:hover {
   transform: scale(1.05);
   transition: 0.3s;
+  box-shadow: 4px 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
 .chapterleadsandinfo {
@@ -799,6 +798,7 @@ a {
   /* -webkit-box-shadow: 0px 3px 13px 0px rgba(0, 0, 0, 0.15); */
   -moz-box-shadow: 0px 3px 13px 0px rgba(0, 0, 0, 0.15);
   /* box-shadow: 0px 3px 13px 0px rgba(0, 0, 0, 0.15); */
+  border-radius: 25px;
   position: relative;
   top: 20px;
 }
@@ -960,9 +960,9 @@ $cards-per-line: (
 
 .card-title {
   font: "Nanum Gothic";
-  font-weight: normal;
+  font-weight: bold;
   letter-spacing: 0.04em; 
-  color: #8b2455;
+  color: #19AEE1;
   font-size: 190%;
 }
 
@@ -10812,6 +10812,11 @@ header.masthead h1 {
     margin-bottom: 5%;
     font-family: "Now Bold";
   }
+  
+  .sectionheader h6 {
+    font-weight: bold;
+  }
+  
   #buttonmobile{
     margin-top: 15%;
   }
@@ -10911,6 +10916,7 @@ header.masthead2 h1 {
     font-family: "playlistscript";
   }
 }
+/*Photos Main Page*/
 header.masthead3 {
   padding-top: 10rem;
   padding-bottom: calc(10rem - 72px);
@@ -10925,6 +10931,12 @@ header.masthead3 h1 {
   font-size: 2.25rem;
   font-family: playlistscript;
 }
+
+header.masthead3 h3 {
+  font-size: 2rem;
+  font-family: "Nanum Gothic";
+}
+
 @media (min-width: 992px) {
   header.masthead3 {
     height: 140vh;
@@ -10952,7 +10964,7 @@ header.masthead3 h1 {
     font-family: "playlistscript";
   }
 }
-
+/*Superposition I Photos*/
 header.masthead4 {
   padding-top: 10rem;
   padding-bottom: calc(10rem - 72px);
@@ -10974,6 +10986,11 @@ header.masthead4 h1 {
     padding-top: 72px;
     padding-bottom: 0;
   }
+  
+  header.masthead4 h3 {
+    font-family: "Nanum Gothic";
+  }
+  
   header.masthead4 p {
     font-size: 1.15rem;
   }
@@ -10995,6 +11012,7 @@ header.masthead4 h1 {
   }
 }
 
+/*Superposition II Photos*/
 header.masthead5 {
   padding-top: 10rem;
   padding-bottom: calc(10rem - 72px);
@@ -11008,6 +11026,11 @@ header.masthead5 {
 header.masthead5 h1 {
   font-size: 2.25rem;
   font-family: playlistscript;
+}
+
+header.masthead5 h3 {
+  font-size: 2.0rem;
+  font-family: "Nanum Gothic";
 }
 @media (min-width: 992px) {
   header.masthead5 {
@@ -11041,7 +11064,7 @@ header.masthead6 {
   padding-top: 10rem;
   padding-bottom: calc(10rem - 72px);
   background-image: linear-gradient(rgba(237, 168, 206, 0.6), rgba(169, 200, 232, 0.6)),
-    url("https://cdn.glitch.com/530d92f6-375b-4a27-915c-2ea2fbce1d73%2FIMG_1493%20copy.jpg?v=1589260339750");
+    url("https://cdn.glitch.com/031b1ff8-fc8f-44a3-8955-846482730e3c%2FCopy%20of%20_DSC8943.jpg?v=1574047853404");
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
