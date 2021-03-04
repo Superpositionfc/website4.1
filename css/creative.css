@@ -9608,7 +9608,7 @@ html {
 #mainNav .navbar-brand {
   font-family: 'Nanum Gothic', sans-serif;
   font-weight: 700;
-  color: #8b2455;
+  color: #FF8AB5;
 }
 
 #mainNav .navbar-nav .nav-item {
@@ -9617,7 +9617,7 @@ html {
 }
 
 #mainNav .navbar-nav .nav-item .nav-link, #mainNav .navbar-nav .nav-item .dropdown-item {
-  color: #8b2455;
+  color: #F794B8;
   font-family: 'Nanum Gothic', sans-serif;
   font-weight: 700;
   font-size: 0.9rem;
@@ -9671,21 +9671,21 @@ html {
     color: rgba(255, 255, 255, 0.7);
   }
   #mainNav .navbar-brand:hover {
-    color: #f794b8;
+    color: #FF8AB5;
   }
   #mainNav .navbar-nav .nav-item .nav-link {
     color: rgba(255, 255, 255, 0.7);
     padding: 0 1rem;
   }
   #mainNav .navbar-nav .nav-item .nav-link:hover {
-    color: #f794b8;
+    color: #FF8AB5;
   }
   #mainNav .navbar-nav .nav-item .dropdown-item {
-    color: #8b2455;
+    color: #f794b8;
     padding: 0 1rem;
   }
   #mainNav .navbar-nav .nav-item .dropdown-item:hover {
-    color: #f794b8;
+    color: #FF8AB5;
   }
   #mainNav .navbar-nav .nav-item:last-child .nav-link {
     padding-right: 0;
@@ -9696,21 +9696,21 @@ html {
     opacity: 0.9;
   }
   #mainNav.navbar-scrolled .navbar-brand {
-    color: #8b2455;
+    color: #F794B8;
   }
   #mainNav.navbar-scrolled .navbar-brand:hover {
-    color: #f794b8;
+    color: #FF8AB5;
   }
   #mainNav.navbar-scrolled .navbar-nav .nav-item .nav-link {
-    color: #8b2455;
+    color: #F794B8;
   }
   #mainNav.navbar-scrolled .navbar-nav .nav-item .nav-link:hover {
-    color: #f794b8;
+    color: #FF8AB5;
   }
 }
 
 a {
-  color: #8b2455;
+  color: #F794B8;
   background: transparent !important;
 }
 

@@ -185,7 +185,7 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 
 .hero-text button:hover {
-  background-color: #8b2455;
+  background-color: #F794B8;
   color: white;
 }
 .titlesubtitle {
@@ -525,7 +525,7 @@ footer {
   list-style-type: none;
  }
 a {
-    color: #8b2455;
+    color: #F794B8;
     text-decoration: none;
 }
 #copyright {
@@ -591,7 +591,7 @@ a {
   /* box-shadow: 0px 3px 13px 0px rgba(0, 0, 0, 0.15); */
   padding: 0 !important;
   margin: 0 !important;
-  border: 0.1em solid var(--blue);
+  /*border: 0.1em solid var(--blue);*/
 }
 
 .circle:hover {
@@ -625,9 +625,9 @@ a {
   -webkit-column-gap: 40px; /* Chrome, Safari, Opera */
   -moz-column-gap: 40px;
   firefox*/column-gap: 40px;
-  -webkit-column-rule: 7px double #8b2455; /* Chrome, Safari, Opera */
-  -moz-column-rule: 7px solid #8b2455; /* Firefox */
-  column-rule: 7px solid #8b2455;
+  -webkit-column-rule: 7px double #F794B8; /* Chrome, Safari, Opera */
+  -moz-column-rule: 7px solid #F794B8; /* Firefox */
+  column-rule: 7px solid #F794B8;
 }
 .row3 {
   margin-left: 10%;
@@ -642,7 +642,7 @@ a {
 .schedtitles {
   margin: 2%;
   margin-bottom: 3%;
-  color: #8b2455;
+  color: #F794B8;
   font-size: 450%;
   font-weight: light;
   font-family: "playlistscript";
@@ -693,7 +693,7 @@ a {
 .expectitles {
   /*   margin-top: 7%; */
   font-size: 350%;
-  color: #8b2455;
+  color: #F794B8;
 }
 .expectsubtitles {
   margin: 5%;
@@ -792,18 +792,33 @@ a {
 }
 
 #areeta {
-  width: 80%;
-  height: 80%;
+   width: 500px;
+  height: 600px;
   transition: 0.3s;
-  /* -webkit-box-shadow: 0px 3px 13px 0px rgba(0, 0, 0, 0.15); */
-  -moz-box-shadow: 0px 3px 13px 0px rgba(0, 0, 0, 0.15);
-  /* box-shadow: 0px 3px 13px 0px rgba(0, 0, 0, 0.15); */
+  box-shadow: 4px 4px 8px 0 rgb(0,0,0,0.2);
   border-radius: 25px;
   position: relative;
   top: 20px;
+  object-fit: cover;
 }
 
 #areeta:hover {
+  transform: scale(1.1);
+}
+
+#stephanie {
+  width: 500px;
+  height: 600px;
+  transition: 0.3s;
+  border-radius: 25px;
+    box-shadow: 4px 4px 8px 0 rgb(0,0,0,0.2);
+  position: relative;
+  top: 20px;
+  object-fit: cover;
+  
+}
+
+#stephanie:hover {
   transform: scale(1.1);
 }
 
@@ -1145,7 +1160,7 @@ body {
   }
     
 a {
-  color: #8b2455;
+  color: #F794B8;
 }
 
 button:hover{
@@ -10663,10 +10678,10 @@ html {
 #mainNav .navbar-brand {
   font-family: "Nanum Gothic", sans-serif;
   font-weight: 700;
-  color: #8b2455;
+  color: #F794B8;
 }
 #mainNav .navbar-nav .nav-item .nav-link {
-  color: #8b2455;
+  color: #F794B8;
   font-family: "Nanum Gothic", sans-serif;
   font-weight: 700;
   font-size: 0.9rem;
@@ -10706,31 +10721,31 @@ html {
     /*     opacity: 0.9; */
   }
   #mainNav.navbar-scrolled .navbar-brand {
-    color: #8b2455;
+    color: #F794B8;
   }
   #mainNav.navbar-scrolled .navbar-brand:hover {
     color: #f794b8;
   }
   #mainNav.navbar-scrolled .navbar-nav .nav-item .nav-link {
-    color: #8b2455;
+    color: #F794B8;
   }
   #mainNav.navbar-scrolled .navbar-nav .nav-item .nav-link:hover {
     color: #f794b8;
   }
 }
 a {
-  color: #8b2455;
+  color: #F794B8;
   background: 0 0 !important;
 }
 
 a:hover {
-  color: #8b2455;
+  color: #F794B8;
 }
 
 #home2{
   display: none;
 }
-
+/*main page*/
 header.masthead {
   padding-top: 10rem;
   padding-bottom: calc(10rem - 72px);
@@ -10877,7 +10892,7 @@ header.masthead h1 {
   opacity: 1;
 }
 a {
-  color: #8b2455;
+  color: #F794B8;
   background: transparent;
 }
 
