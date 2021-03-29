@@ -727,7 +727,7 @@ a {
   transform: scale(1.1);
 }
 .sponsors {
-      padding: 2vw;
+    padding: 2vw;
     vertical-align: middle;
 /*   margin: 2%;
   padding: 1%; */
@@ -811,7 +811,7 @@ a {
   height: 600px;
   transition: 0.3s;
   border-radius: 25px;
-    box-shadow: 4px 4px 8px 0 rgb(0,0,0,0.2);
+  box-shadow: 4px 4px 8px 0 rgb(0,0,0,0.2);
   position: relative;
   top: 20px;
   object-fit: cover;
@@ -11517,7 +11517,7 @@ header.masthead14 h3 {
 }
 
 
-
+/* Chapter Map */
 #chapters-map {
   /* display: grid; */
   grid-template-columns: 3fr minmax(200px, 6fr);
