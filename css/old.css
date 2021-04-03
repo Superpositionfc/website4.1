@@ -10757,7 +10757,7 @@ header.masthead {
   background-size: cover;
 }
 header.masthead h1 {
-  font-size: 2.25rem;
+  font-size: 6.5rem;
   font-family: playlistscript;
 }
 @media (min-width: 992px) {
@@ -10771,7 +10771,7 @@ header.masthead h1 {
     font-size: 1.15rem;
   }
   header.masthead h1 {
-    font-size: 3rem;
+    font-size: 6.5rem;
     font-family: playlistscript;
   }
 }
@@ -10789,7 +10789,7 @@ header.masthead h1 {
     padding-bottom: 0; 
   }
   header.masthead h1 {
-    font-size: 4rem;
+    font-size: 6.5rem;
     font-family: "playlistscript";
   }
   #home{
@@ -10907,7 +10907,7 @@ header.masthead2 {
   background-size: cover;
 }
 header.masthead2 h1 {
-  font-size: 3rem;
+  font-size: 6.5rem;
   font-family: playlistscript;
 }
 @media (min-width: 992px) {
