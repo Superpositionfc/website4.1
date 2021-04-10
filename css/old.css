@@ -11217,6 +11217,40 @@ header.masthead8 h3 {
   }
 }
 
+/* Easter Eggs*/
+.easter-eggs {
+  max-width: 15%;
+  max-height: 15%;
+  display: inline-block;
+}
+
+/* PRIZES SECTION */
+#prizes-display {
+  display: grid;
+  grid-template-columns: repeat(4, 25%);
+  grid-auto-rows: 40%;
+  grid-gap: 10px;
+  padding-right: 2.5%;
+  padding-left: 2.5%;
+}
+
+.prize-card {
+  display: grid;
+  width: 100%;
+  max-height: 70%;
+  flex-direction: column;
+  justify-content: space-around;
+  min-height: 0;
+  flex-basis: auto;
+}
+
+.prize-image {
+  display: block;
+  max-width: 100%;
+  max-height: 50%;
+  object-fit: contain;
+}
+
 /* SPONSORS PAGE */
 header.masthead9{
   padding-top: 10rem;
