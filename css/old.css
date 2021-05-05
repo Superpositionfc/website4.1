@@ -11169,11 +11169,14 @@ header.masthead7 h1 {
   }
 }
 /* HACKATHON */
+
 header.masthead8 {
   padding-top: 10rem;
   padding-bottom: calc(10rem - 72px);
   background-image: linear-gradient(rgba(237, 168, 206, 0.6), rgba(169, 200, 232, 0.6)),
     url("https://cdn.glitch.com/530d92f6-375b-4a27-915c-2ea2fbce1d73%2FIMG_1493%20copy.jpg?v=1589260339750");
+  /*background-image: linear-gradient(rgba(237, 168, 206, 0.6), rgba(169, 200, 232, 0.6)),
+    url("https://i.ibb.co/mXXfQS6/Superposition-V-Audience.jpg");*/
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
@@ -11215,6 +11218,53 @@ header.masthead8 h3 {
     font-size: 6.5rem;
     font-family: "playlistscript";
   }
+}
+
+#prevhackathons {
+  height: 100vh;  
+}
+
+#prevhackathoncontainer {
+  display: grid;
+  grid-template-columns: repeat(2, 45%);
+  grid-gap: 20px;
+  grid-auto-rows: minmax(100%, auto);
+  width: 100%;
+  height: 100%;
+  margin: 0px 15px 0px 15px;
+}
+
+.prevhackathoncard {
+  display: grid;
+  grid-template-rows: 20% 50% 30%;
+  grid-template-columns: 100%;
+  max-width: 100%;
+  min-height: 600px;
+  height: auto;
+  border-style: solid;
+  border-radius: 15px;
+}
+
+.hackathonstats {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  width: auto;
+  max-height: 100%;
+}
+
+/*
+.hackathon-block {
+  border-radius: 15px; important
+}*/
+
+.prevhackathoncard:hover {
+  transform: scale(1.05);
+  transition: 0.3s;
+  box-shadow: 4px 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.link {
+  color: #F794B8;
 }
 
 /* Easter Eggs*/

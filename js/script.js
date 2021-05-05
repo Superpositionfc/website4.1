@@ -34,10 +34,10 @@ function animateValue(id, start, end, duration, step) {
 
 animateValue("js-number-reached", 0, 300000, 6000, 1000);
 animateValue("js-number-countries", 0, 110, 6000);
-animateValue("js-number-chapters", 0, 78, 6000);
-animateValue("value4", 0, 4, 6000);
-animateValue("value5", 0, 119, 6000);
-animateValue("value6", 0, 484, 6000);
+animateValue("js-number-chapters", 0, 87, 6000);
+animateValue("value4", 0, 5, 6000);
+animateValue("value5", 0, 181, 6000);
+animateValue("value6", 0, 1000, 6000);
 animateValue("js-conf-registration-reach", 0, 2550, 3000, 50);
 animateValue("js-conf-country-reach", 0, 78, 3000);
 animateValue("js-conf-states-reach", 0, 47, 3000);
