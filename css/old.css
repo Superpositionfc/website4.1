@@ -17,7 +17,6 @@
 }
 
 #home2{
-  display: none;
 }
 
 * {
@@ -10743,7 +10742,7 @@ a:hover {
 }
 
 #home2{
-  display: none;
+
 }
 /*main page*/
 header.masthead {
