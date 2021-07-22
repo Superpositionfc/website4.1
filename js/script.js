@@ -34,7 +34,7 @@ function animateValue(id, start, end, duration, step) {
 
 animateValue("js-number-reached", 0, 800000, 6000, 1000);
 animateValue("js-number-countries", 0, 110, 6000);
-animateValue("js-number-chapters", 0, 95, 6000);
+animateValue("js-number-chapters", 0, 97, 6000);
 animateValue("value4", 0, 5, 6000);
 animateValue("value5", 0, 181, 6000);
 animateValue("value6", 0, 1000, 6000);
@@ -305,7 +305,7 @@ function showConferenceTimer() {
   var fmt = function(n) { return n > 9 ? n : "0" + n };
   if(timer) {
     setInterval(function() {
-      var conferenceDate = new Date(2021, 0, 16, 18);
+      var conferenceDate = new Date(2021, 7, 11, 23, 59, 59);
       var now = new Date();
       var diff = conferenceDate.getTime() - now.getTime();
       var days = Math.floor(diff / (1000 * 3600 * 24));
