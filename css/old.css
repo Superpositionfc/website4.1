@@ -976,7 +976,7 @@ $cards-per-line: (
   font: "Nanum Gothic";
   font-weight: bold;
   letter-spacing: 0.04em; 
-  color: #19AEE1;
+  color: #8c98ff;
   font-size: 190%;
 }
 
@@ -1270,7 +1270,7 @@ footer {
   scrollbar-color: red yellow;
 }
 .emphasis{
-  color: #a3acff;
+  color: #8c98ff;
 }
 
 
@@ -10748,7 +10748,7 @@ a:hover {
 header.masthead {
   padding-top: 10rem;
   padding-bottom: calc(10rem - 72px);
-  background-image: linear-gradient(rgba(237, 168, 206, 0.6), rgba(169, 200, 232, 0.6)),
+  background-image: linear-gradient(rgba(245, 142, 198, 0.8), rgba(147, 196, 245, 0.8)),
     url("https://cdn.glitch.com/530d92f6-375b-4a27-915c-2ea2fbce1d73%2F_IMG_7785-4.jpg?v=1589228911789");
   background-position: center;
   background-repeat: no-repeat;
@@ -11694,6 +11694,16 @@ header.masthead15 h3 {
   }
 }
 
+#conference-prizes {
+  max-width: 70%;
+  height: auto;
+}
+
+#conference-prizes:hover {
+  transform: scale(1.1);
+  transition: 0.3s;
+}
+
 #conference-schedule {
   background-color: #fff;
   padding: 3%;
@@ -11713,6 +11723,7 @@ header.masthead15 h3 {
   font-size: 2em;
   font-weight: bold;
 }
+
 
 .gradient-text {
   background: var(--gradient);
@@ -11843,4 +11854,14 @@ header.masthead15 h3 {
 
 #conference-sponsors img:hover {
   transform: scale(1.1);
+}
+
+#hackathon-prizes {
+  max-width: 70%;
+  height: auto;
+}
+
+#hackathon-prizes:hover {
+  transform: scale(1.1);
+  transition: 0.3s;
 }
