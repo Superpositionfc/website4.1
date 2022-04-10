@@ -36,8 +36,8 @@ html {
   background-repeat: none;
   z-index: 0;
 /*   background: #F5F5F5; 
-   background: linear-gradient(#ffebf2, #fff5f8, #ffebf2); */
-   background: linear-gradient(#ffe6f4 0%, #e6f1ff 50%, #ffe6f4); 
+   background: linear-gradient(#ffebf2, #fff5f8, #ffebf2); 
+   background: linear-gradient(#ffe6f4 0%, #e6f1ff 50%, #ffe6f4); */
   opacity: 1;
 }
 p, h1, h2, h3, h4, h5, h6 {
@@ -86,7 +86,7 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 
 /* TEXT */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 576px) {
   .sectionheader {
     font-size: 5%;
   }
@@ -109,12 +109,14 @@ p, h1, h2, h3, h4, h5, h6 {
   padding: 20px 18px;
   text-decoration: none;
   font-size: 17px;
+  transition: 0.3s
 }
 
 /* Change the color of links on hover */
 .topnav a:hover {
   text-shadow: 2px 2px 5px black;
   color: white;
+  transition: 0.3s
 }
 
 /* Add a color to the active/current link */
@@ -132,7 +134,7 @@ p, h1, h2, h3, h4, h5, h6 {
   font-family: "Now Bold";
   color: #a3acff;
   letter-spacing: 1px;
-  transform: translate(0, 40%);
+  /*transform: translate(0, 40%);*/
 }
 
 #title {
@@ -221,12 +223,13 @@ p, h1, h2, h3, h4, h5, h6 {
 .sectionheader {
   font-size: 350%;
   margin: 4.5%;
+  transform: translateY(40%);
 }
 
 .sectiontext {
-  font-size: 130%;
-  margin: 5%;
+  font-size: 1.2rem;
   line-height: 1.5;
+  width: 90%;
 }
 
 
@@ -256,13 +259,14 @@ p, h1, h2, h3, h4, h5, h6 {
   padding: 17px 50px;
   text-align: center;
   text-decoration: none;
-  display: inline-block;
   font-size: 16px;
-  margin: 20px 5px;
+  margin: 10px 5px 10px 5px;
   cursor: pointer;
   opacity: .9;
   border-radius: 5px;
   transform: translate(0, -50%);
+  transition: 0.3s;
+  display: inline-block;
 }
 
 .button.disabled {
@@ -297,6 +301,21 @@ p, h1, h2, h3, h4, h5, h6 {
     0.1em 0.1em 0.2em inset #828eff;
   color: white;
   transition:0.5s;
+}
+
+@media screen and (max-width: 768px){
+  .button {
+      width:100%;
+      display: block;
+      margin: 10px 0;
+  }
+}
+
+@media screen and (max-width: 1200px){
+  .button {
+      display: inline-block;
+      margin: 10px 0;
+  }
 }
 
 /* WHAT IS SUPERPOSITION SECTION */
@@ -367,6 +386,7 @@ p, h1, h2, h3, h4, h5, h6 {
 
 .accordion:hover {
   background-color: #9ee6ff;
+  transition: 0.3s
 }
 
 .accordion:after {
@@ -422,6 +442,7 @@ p, h1, h2, h3, h4, h5, h6 {
   /*max-width: 100%;
   height: auto;*/
   border-radius: 15px; important
+  transition: 0.3s
  
 }
 
@@ -435,16 +456,19 @@ p, h1, h2, h3, h4, h5, h6 {
 
 .chapter-social-link {
   color: #19AEE1;
+  transition: 0.3s
 }
 
 .chapter-social-link:hover {
   color: #19AEE1;
+  transition: 0.3s
 }
 
 .chapter-block:hover {
   transform: scale(1.05);
   transition: 0.3s;
   box-shadow: 4px 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s
 }
 
 .chapterleadsandinfo {
@@ -551,7 +575,7 @@ a {
 }
 
 /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
   .column {
     width: 100%;
   }
@@ -587,11 +611,13 @@ a {
   /* box-shadow: 0px 3px 13px 0px rgba(0, 0, 0, 0.15); */
   padding: 0 !important;
   margin: 0 !important;
+  transition: 0.3s
   /*border: 0.1em solid var(--blue);*/
 }
 
 .circle:hover {
   transform: scale(1.1);
+  transition: 0.3s
 }
 
 .teamsocials {
@@ -673,7 +699,7 @@ a {
   clear: both;
 }
 /* Responsive layout - when the screen is less than 600px wide, make the three columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
   .column {
     width: 100%;
   }
@@ -717,10 +743,12 @@ a {
   /* -webkit-box-shadow: 0px 3px 13px 0px rgba(0, 0, 0, 0.15); */
   -moz-box-shadow: 0px 3px 13px 0px rgba(0, 0, 0, 0.15);
   /* box-shadow: 0px 3px 13px 0px rgba(0, 0, 0, 0.15); */
+  transition: 0.3s
 }
 
 .sponsorsimages:hover {
   transform: scale(1.1);
+  transition: 0.3s
 }
 .sponsors {
     padding: 2vw;
@@ -752,7 +780,7 @@ a {
   font-size: 50px;
 } */
 .about {
-  padding: 1%;
+
 }
 .column5 {
   float: left;
@@ -766,29 +794,31 @@ a {
   clear: both;
 }
 /* Responsive layout - when the screen is less than 600px wide, make the three columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
   .column5 {
     width: 100%;
   }
 }
 
-#introgifs {
-  width: 80%;
-  height: 80%;
-  transition: 0.3s;
+.panel-img {
+  height: 20rem;
+  object-fit: cover;
   /* -webkit-box-shadow: 0px 3px 13px 0px rgba(0, 0, 0, 0.15); */
   -moz-box-shadow: 0px 3px 13px 0px rgba(0, 0, 0, 0.15);
   /* box-shadow: 0px 3px 13px 0px rgba(0, 0, 0, 0.15); */
   position: relative;
-  top: 100px;
+  /*top: 100px;*/
   border-radius: 5px;
-  margin: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
   
 }
-
-#introgifs:hover {
-  transform: scale(1.1);
-}
+/*
+.panel-img:hover {
+  transform: scale(1.05);
+  transition: 0.3s
+} */
 
 #areeta {
    width: 500px;
@@ -801,10 +831,6 @@ a {
   object-fit: cover;
 }
 
-#areeta:hover {
-  transform: scale(1.1);
-}
-
 #stephanie {
   width: 500px;
   height: 600px;
@@ -813,12 +839,7 @@ a {
   box-shadow: 4px 4px 8px 0 rgb(0,0,0,0.2);
   position: relative;
   top: 20px;
-  object-fit: cover;
-  
-}
-
-#stephanie:hover {
-  transform: scale(1.1);
+  object-fit: cover;  
 }
 
 
@@ -831,10 +852,12 @@ a {
   /* box-shadow: 0px 3px 13px 0px rgba(0, 0, 0, 0.15); */
   position: relative;
   top: 50px;
+  transition: 0.3s
 }
 
 #workshopphoto:hover {
-  transform: scale(1.1);
+  transform: scale(1.05);
+  transition: 0.3s
 }
 
 #workshops {
@@ -844,10 +867,12 @@ a {
   /* -webkit-box-shadow: 0px 3px 13px 0px rgba(0, 0, 0, 0.15); */
   -moz-box-shadow: 0px 3px 13px 0px rgba(0, 0, 0, 0.15);
   /* box-shadow: 0px 3px 13px 0px rgba(0, 0, 0, 0.15); */
+  transition: 0.3s;
 }
 
 #workshops:hover {
   transform: scale(0.9);
+  transition: 0.3s;
 }
 
 
@@ -881,13 +906,13 @@ a {
 
 /*  GO FULL WIDTH AT LESS THAN 480 PIXELS */
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 768px) {
 	.col { 
 		margin: 1% 0 1% 0%;
 	}
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 768px) {
 	.span_2_of_2, .span_1_of_2 { width: 100%; }
 }
 
@@ -919,7 +944,7 @@ a {
 }
 
 /* Responsive columns - one column layout (vertical) on small screens */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
   .column {
     width: 100%;
     display: block;
@@ -1015,7 +1040,7 @@ transition: 0.3s;
   clear: both;
 }
 /* Responsive layout - when the screen is less than 600px wide, make the three columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 576px) {
   .column50 {
     width: 100%;
   }
@@ -1180,7 +1205,7 @@ button:hover{
   clear: both;
 }
 /* Responsive layout - when the screen is less than 600px wide, make the three columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 576px) {
   .column50 {
     width: 100%;
   }
@@ -1436,7 +1461,7 @@ th, td {
   width:55%;
   height:auto;
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 576px) {
   .columnmodal {
     width: 100%;
   }
@@ -1471,7 +1496,7 @@ th, td {
   flex: 50%;
 }
 /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 576px) {
   .columnsched {
     width: 100%;
   }
@@ -1509,14 +1534,14 @@ th {
 }
 
 /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 576px) {
   .columnvid {
     width: 100%;
   }
 }
 
 /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 576px) {
   .columnsun {
     width: 100%;
   }
@@ -2247,7 +2272,7 @@ h6 {
 }
 .h1,
 h1 {
-  font-size: 2.5rem;
+  font-size: 6.5rem;
 }
 .h2,
 h2 {
@@ -10689,6 +10714,7 @@ html {
 #mainNav .navbar-nav .nav-item .nav-link:active,
 #mainNav .navbar-nav .nav-item .nav-link:hover {
   color: #f794b8;
+  transition: 0.3s
 }
 #mainNav .navbar-nav .nav-item .nav-link.active {
   color: #f794b8 !important;
@@ -10703,6 +10729,7 @@ html {
   }
   #mainNav .navbar-brand:hover {
     color: #f794b8;
+    transition: 0.3s
   }
   #mainNav .navbar-nav .nav-item .nav-link {
     color: rgba(255, 255, 255, 0.7);
@@ -10710,6 +10737,7 @@ html {
   }
   #mainNav .navbar-nav .nav-item .nav-link:hover {
     color: #f794b8;
+    transition: 0.3s
   }
   #mainNav .navbar-nav .nav-item:last-child .nav-link {
     padding-right: 0;
@@ -10721,24 +10749,30 @@ html {
   }
   #mainNav.navbar-scrolled .navbar-brand {
     color: #F794B8;
+    transition: 0.3s
   }
   #mainNav.navbar-scrolled .navbar-brand:hover {
     color: #f794b8;
+    transition: 0.3s
+      
   }
   #mainNav.navbar-scrolled .navbar-nav .nav-item .nav-link {
     color: #F794B8;
   }
   #mainNav.navbar-scrolled .navbar-nav .nav-item .nav-link:hover {
     color: #f794b8;
+    transition: 0.3s
   }
 }
 a {
   color: #F794B8;
   background: 0 0 !important;
+  transition: 0.3s
 }
 
 a:hover {
   color: #F794B8;
+  transition: 0.3s
 }
 
 #home2{
@@ -10788,7 +10822,7 @@ header.masthead h1 {
     padding-bottom: 0; 
   }
   header.masthead h1 {
-    font-size: 6.5rem;
+    font-size: 5rem;
     font-family: "playlistscript";
   }
   #home{
@@ -10799,23 +10833,23 @@ header.masthead h1 {
     font-family: "Nanum Gothic";
     font-size: 3.5rem;
   }
+  /*
   #home2{
   display: block;
-    background-color: #f794b8;
   border: none;
-  color: black;
+  color: white;
   padding: 15px 100px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
   margin-top: -1%;
-/*   margin: 20px 5px; */
+/*   margin: 20px 5px; 
   cursor: pointer;
   opacity: .9;
   border-radius: 5px;
   transform: translate(0, -50%);
-  }
+  } */
   #pinkbg {
     padding: 4%;
   }
@@ -10890,6 +10924,7 @@ header.masthead h1 {
 }
 #portfolio .container-fluid .portfolio-box:hover .portfolio-box-caption {
   opacity: 1;
+  transition: 0.3s
 }
 a {
   color: #F794B8;
@@ -10975,7 +11010,7 @@ header.masthead3 h3 {
 }
 @media (max-width: 480px) {
   header.masthead3 h1 {
-    font-size: 6.5rem;
+    font-size: 5rem;
     font-family: "playlistscript";
   }
 }
@@ -11022,7 +11057,7 @@ header.masthead4 h1 {
 }
 @media (max-width: 480px) {
   header.masthead4 h1 {
-    font-size: 6.5rem;
+    font-size: 5rem;
     font-family: "playlistscript";
   }
 }
@@ -11070,7 +11105,7 @@ header.masthead5 h3 {
 }
 @media (max-width: 480px) {
   header.masthead5 h1 {
-    font-size: 6.5rem;
+    font-size: 5rem;
     font-family: "playlistscript";
   }
 }
@@ -11118,7 +11153,7 @@ header.masthead6 h3 {
 }
 @media (max-width: 480px) {
   header.masthead6 h1 {
-    font-size: 6.5rem;
+    font-size: 5rem;
     font-family: "playlistscript";
   }
 }
@@ -11164,7 +11199,7 @@ header.masthead7 h1 {
 }
 @media (max-width: 480px) {
   header.masthead7 h1 {
-    font-size: 6.5rem;
+    font-size: 5rem;
     font-family: "playlistscript";
   }
 }
@@ -11213,7 +11248,7 @@ header.masthead8 h3 {
 }
 @media (max-width: 480px) {
   header.masthead8 h1 {
-    font-size: 6.5rem;
+    font-size: 5rem;
     font-family: "playlistscript";
   }
 }
@@ -11241,6 +11276,7 @@ header.masthead8 h3 {
   height: auto;
   border-style: solid;
   border-radius: 15px;
+  transition: 0.3s
 }
 
 .hackathonstats {
@@ -11343,7 +11379,7 @@ header.masthead9 h3 {
 }
 @media (max-width: 480px) {
   header.masthead9 h1 {
-    font-size: 6.5rem;
+    font-size: 5rem;
     font-family: "playlistscript";
   }
 }
@@ -11392,7 +11428,7 @@ header.masthead10 h3 {
 }
 @media (max-width: 480px) {
   header.masthead10 h1 {
-    font-size: 6.5rem;
+    font-size: 5rem;
     font-family: "playlistscript";
   }
 }
@@ -11446,7 +11482,7 @@ header.masthead11 h3 {
 }
 @media (max-width: 480px) {
   header.masthead11 h1 {
-    font-size: 6.5rem;
+    font-size: 5rem;
     font-family: "playlistscript";
   }
 }
@@ -11494,7 +11530,7 @@ header.masthead12 h3 {
 }
 @media (max-width: 480px) {
   header.masthead12 h1 {
-    font-size: 6.5rem;
+    font-size: 5rem;
     font-family: "playlistscript";
   }
 }
@@ -11544,7 +11580,7 @@ header.masthead13 h3 {
 }
 @media (max-width: 480px) {
   header.masthead13 h1 {
-    font-size: 6.5rem;
+    font-size: 5rem;
     font-family: "playlistscript";
   }
 }
@@ -11593,7 +11629,7 @@ header.masthead14 h3 {
 }
 @media (max-width: 480px) {
   header.masthead14 h1 {
-    font-size: 6.5rem;
+    font-size: 5rem;
     font-family: "playlistscript";
   }
 }
