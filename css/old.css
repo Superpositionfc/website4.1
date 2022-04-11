@@ -822,6 +822,7 @@ a {
   position: relative;
   top: 20px;
   object-fit: cover;
+  display: inline-block;
 }
 
 #stephanie {
@@ -832,6 +833,7 @@ a {
   position: relative;
   top: 20px;
   object-fit: cover;
+  display: inline-block;
 }
 
 #workshopphoto {
@@ -10818,16 +10820,13 @@ header.masthead h1 {
     padding-bottom: 0;
   }
   header.masthead h1 {
-    font-size: 5rem;
+    font-size: 4.5rem;
     font-family: "playlistscript";
   }
-  #home {
-    display: none;
-  }
-  #locationsub {
-    display: none;
+  
+  #locationsub2 {
     font-family: "Nanum Gothic";
-    font-size: 3.5rem;
+    font-size: 1.5em;
   }
   /*
   #home2{
@@ -10871,6 +10870,14 @@ header.masthead h1 {
   }
   .sponsorssubtitle {
     padding: 5%;
+  }
+  
+  #areeta, #stephanie {
+    display: block;
+  }
+  
+  #story-line {
+    display: block;
   }
 }
 
