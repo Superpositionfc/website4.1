@@ -815,8 +815,7 @@ a {
 } */
 
 #areeta {
-  width: 500px;
-  height: 500px;
+  width: 100%;
   box-shadow: 4px 4px 8px 0 rgb(0, 0, 0, 0.2);
   border-radius: 25px;
   position: relative;
@@ -825,8 +824,7 @@ a {
 }
 
 #stephanie {
-  width: 500px;
-  height: 500px;
+  width: 100%;
   border-radius: 25px;
   box-shadow: 4px 4px 8px 0 rgb(0, 0, 0, 0.2);
   position: relative;
@@ -1304,10 +1302,9 @@ footer {
 }
 .emphasis {
   color: #8c98ff;
+  text-decoration: none;
 }
-.emphasis {
-  color: #8c98ff;
-}
+
 th,
 td {
   padding: 15px;
@@ -10818,16 +10815,13 @@ header.masthead h1 {
     padding-bottom: 0;
   }
   header.masthead h1 {
-    font-size: 5rem;
+    font-size: 4rem;
     font-family: "playlistscript";
   }
-  #home {
-    display: none;
-  }
-  #locationsub {
-    display: none;
+  
+  #locationsub2 {
     font-family: "Nanum Gothic";
-    font-size: 3.5rem;
+    font-size: 1.5em;
   }
   /*
   #home2{
@@ -10871,6 +10865,11 @@ header.masthead h1 {
   }
   .sponsorssubtitle {
     padding: 5%;
+  }
+
+  
+  #story-line {
+    display: block;
   }
 }
 
@@ -11922,9 +11921,4 @@ header.masthead15 h3 {
 #hackathon-prizes {
   max-width: 70%;
   height: auto;
-}
-
-#hackathon-prizes:hover {
-  transform: scale(1.1);
-  transition: 0.3s;
 }
