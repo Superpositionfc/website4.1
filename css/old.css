@@ -10683,12 +10683,10 @@ hr.light {
 .page-section {
   padding: 8rem 0;
 }
-html {
-  font-family: "Nanum Gothic", sans-serif;
-}
+
 #mainNav {
   box-shadow: none;
-  background-color: #fff;
+  background-color: #ffffff;
   transition: background-color transparent;
 }
 #mainNav .navbar-brand {
@@ -10720,7 +10718,7 @@ html {
     color: rgba(255, 255, 255, 0.7);
   }
   #mainNav .navbar-brand:hover {
-    color: #f794b8;
+    color: #ebebeb;
     transition: 0.3s;
   }
   #mainNav .navbar-nav .nav-item .nav-link {
@@ -10728,7 +10726,7 @@ html {
     padding: 0 1rem;
   }
   #mainNav .navbar-nav .nav-item .nav-link:hover {
-    color: #f794b8;
+    color: #ebebeb;
     transition: 0.3s;
   }
   #mainNav .navbar-nav .nav-item:last-child .nav-link {
@@ -10736,7 +10734,7 @@ html {
   }
   #mainNav.navbar-scrolled {
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
-    background-color: #fff;
+    background-color: #ffffff;
     /*     opacity: 0.9; */
   }
   #mainNav.navbar-scrolled .navbar-brand {
@@ -10759,6 +10757,7 @@ a {
   color: #f794b8;
   background: 0 0 !important;
   transition: 0.3s;
+  text-decoration: none;
 }
 
 a:hover {
@@ -10766,8 +10765,6 @@ a:hover {
   transition: 0.3s;
 }
 
-#home2 {
-}
 /*main page*/
 header.masthead {
   padding-top: 10rem;
@@ -10974,7 +10971,7 @@ header.masthead3 {
   background-size: cover;
 }
 header.masthead3 h1 {
-  font-size: 2.25rem;
+  font-size: 6rem;
   font-family: playlistscript;
 }
 
@@ -10994,7 +10991,7 @@ header.masthead3 h3 {
     font-size: 1.15rem;
   }
   header.masthead3 h1 {
-    font-size: 3rem;
+    font-size: 6rem;
     font-family: playlistscript;
   }
 }
@@ -11025,7 +11022,7 @@ header.masthead4 {
   background-size: cover;
 }
 header.masthead4 h1 {
-  font-size: 2.25rem;
+  font-size: 6rem;
   font-family: playlistscript;
 }
 @media (min-width: 992px) {
@@ -11044,7 +11041,7 @@ header.masthead4 h1 {
     font-size: 1.15rem;
   }
   header.masthead4 h1 {
-    font-size: 3rem;
+    font-size: 6rem;
     font-family: playlistscript;
   }
 }
@@ -11076,7 +11073,7 @@ header.masthead5 {
   background-size: cover;
 }
 header.masthead5 h1 {
-  font-size: 2.25rem;
+  font-size: 6rem;
   font-family: playlistscript;
 }
 
@@ -11095,7 +11092,7 @@ header.masthead5 h3 {
     font-size: 1.15rem;
   }
   header.masthead5 h1 {
-    font-size: 3rem;
+    font-size: 6rem;
     font-family: playlistscript;
   }
 }
@@ -11126,7 +11123,7 @@ header.masthead6 {
   background-size: cover;
 }
 header.masthead6 h1 {
-  font-size: 2.25rem;
+  font-size: 6rem;
   font-family: "playlistscript";
 }
 
@@ -11146,7 +11143,7 @@ header.masthead6 h3 {
     font-size: 1.15rem;
   }
   header.masthead6 h1 {
-    font-size: 3rem;
+    font-size: 6rem;
     font-family: playlistscript;
   }
 }
@@ -11178,7 +11175,7 @@ header.masthead7 {
 }
 
 header.masthead7 h1 {
-  font-size: 2.25rem;
+  font-size: 6rem;
   font-family: playlistscript;
 }
 @media (min-width: 992px) {
@@ -11192,7 +11189,7 @@ header.masthead7 h1 {
     font-size: 1.15rem;
   }
   header.masthead7 h1 {
-    font-size: 3rem;
+    font-size: 6rem;
     font-family: playlistscript;
   }
   header.masthead7 h3 {
@@ -11227,7 +11224,7 @@ header.masthead8 {
   background-size: cover;
 }
 header.masthead8 h1 {
-  font-size: 2.25rem;
+  font-size: 6rem;
   font-family: "playlistscript";
 }
 
@@ -11247,7 +11244,7 @@ header.masthead8 h3 {
     font-size: 1.15rem;
   }
   header.masthead8 h1 {
-    font-size: 3rem;
+    font-size: 6rem;
     font-family: playlistscript;
   }
 }
@@ -11361,7 +11358,7 @@ header.masthead9 {
   background-size: cover;
 }
 header.masthead9 h1 {
-  font-size: 2.25rem;
+  font-size: 6rem;
   font-family: "playlistscript";
 }
 
@@ -11381,7 +11378,7 @@ header.masthead9 h3 {
     font-size: 1.15rem;
   }
   header.masthead9 h1 {
-    font-size: 3rem;
+    font-size: 6rem;
     font-family: playlistscript;
   }
 }
@@ -11413,7 +11410,7 @@ header.masthead10 {
   background-size: cover;
 }
 header.masthead10 h1 {
-  font-size: 2.25rem;
+  font-size: 6rem;
   font-family: "playlistscript";
 }
 
@@ -11433,7 +11430,7 @@ header.masthead10 h3 {
     font-size: 1.15rem;
   }
   header.masthead10 h1 {
-    font-size: 3rem;
+    font-size: 6rem;
     font-family: playlistscript;
   }
 }
@@ -11470,7 +11467,7 @@ header.masthead11 {
   background-size: cover;
 }
 header.masthead11 h1 {
-  font-size: 2.25rem;
+  font-size: 6rem;
   font-family: "playlistscript";
 }
 
@@ -11490,7 +11487,7 @@ header.masthead11 h3 {
     font-size: 1.15rem;
   }
   header.masthead11 h1 {
-    font-size: 3rem;
+    font-size: 6rem;
     font-family: playlistscript;
   }
 }
@@ -11521,7 +11518,7 @@ header.masthead12 {
   background-size: cover;
 }
 header.masthead12 h1 {
-  font-size: 2rem;
+  font-size: 6rem;
   font-family: "playlistscript";
 }
 
@@ -11541,7 +11538,7 @@ header.masthead12 h3 {
     font-size: 1.15rem;
   }
   header.masthead12 h1 {
-    font-size: 3rem;
+    font-size: 6rem;
     font-family: playlistscript;
   }
 }
@@ -11574,7 +11571,7 @@ header.masthead13 {
   height: 100vh;
 }
 header.masthead13 h1 {
-  font-size: 2rem;
+  font-size: 6rem;
   font-family: "playlistscript";
 }
 
@@ -11594,7 +11591,7 @@ header.masthead13 h3 {
     font-size: 1.15rem;
   }
   header.masthead13 h1 {
-    font-size: 3rem;
+    font-size: 6rem;
     font-family: playlistscript;
   }
 }
@@ -11626,7 +11623,7 @@ header.masthead14 {
   background-size: cover;
 }
 header.masthead14 h1 {
-  font-size: 2.25rem;
+  font-size: 6rem;
   font-family: "playlistscript";
 }
 
@@ -11646,7 +11643,7 @@ header.masthead14 h3 {
     font-size: 1.15rem;
   }
   header.masthead14 h1 {
-    font-size: 3rem;
+    font-size: 6rem;
     font-family: playlistscript;
   }
 }
@@ -11732,8 +11729,8 @@ header.masthead15 {
   background-size: cover;
 }
 header.masthead15 h1 {
-  font-size: 2.25rem;
-  font-family: "Now Bold";
+  font-size: 2rem;
+  font-family: "playlistscript";
   line-height: 70%;
 }
 
@@ -11753,7 +11750,7 @@ header.masthead15 h3 {
     font-size: 1.15rem;
   }
   header.masthead15 h1 {
-    font-size: 3rem;
+    font-size: 6rem;
   }
 }
 @media (min-width: 1200px) {
