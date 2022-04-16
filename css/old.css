@@ -97,7 +97,7 @@ h6 {
 /* TEXT */
 @media screen and (max-width: 576px) {
   .sectionheader {
-    font-size: 5%;
+    font-size: 100%;
   }
 }
 
@@ -230,7 +230,7 @@ h6 {
   margin: 2%;
 }
 .sectionheader {
-  font-size: 350%;
+  font-size: 300%;
   transform: translateY(20%);
 }
 
@@ -283,7 +283,7 @@ h6 {
 
 .button.disabled:hover {
   box-shadow: none;
-  background-color: #b5bcff;
+  background-color: #919cff;
   transition: 0.3s;
 }
 
@@ -294,7 +294,7 @@ h6 {
   display: inline-block;
   font-family: "Nanum Gothic";
   padding: 0.75em;
-  box-shadow: 0.1em 0.1em #828eff;
+  /*box-shadow: 0.1em 0.1em #828eff;*/
   color: white;
   border-radius: 5px;
   opacity: 0.9;
@@ -304,7 +304,7 @@ h6 {
 
 .button-cta:hover {
   transform: translate(0.1em, 0.1em);
-  box-shadow: 0 0 #828eff, 0.1em 0.1em 0.2em inset #828eff;
+  /*box-shadow: 0 0 #828eff, 0.1em 0.1em 0.2em inset #828eff;*/
   color: white;
   transition: 0.5s;
 }
@@ -596,6 +596,19 @@ a {
 /* Responsive layout - when the screen is less than 600px wide, make the three columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 900px) {
   .column2 {
+    width: 50%;
+  }
+}
+
+.logocolumn {
+  float: left;
+  width: 25%;
+  padding: 1%;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 900px) {
+  .logocolumn {
     width: 50%;
   }
 }
@@ -2016,9 +2029,9 @@ p {
 }
 abbr[data-original-title],
 abbr[title] {
-  text-decoration: underline;
-  -webkit-text-decoration: underline dotted;
-  text-decoration: underline dotted;
+  text-decoration: none;
+  -webkit-text-decoration: none;
+  text-decoration: none;
   cursor: help;
   border-bottom: 0;
   -webkit-text-decoration-skip-ink: none;
@@ -10780,8 +10793,8 @@ header.masthead {
   background-size: cover;
 }
 header.masthead h1 {
-  font-size: 6.5rem;
-  font-family: playlistscript;
+  font-size: 6rem;
+  font-family: "playlistscript";
 }
 @media (min-width: 992px) {
   header.masthead {
@@ -10795,7 +10808,7 @@ header.masthead h1 {
   }
   header.masthead h1 {
     font-size: 6.5rem;
-    font-family: playlistscript;
+    font-family: "playlistscript";
   }
 }
 @media (min-width: 1200px) {
@@ -10932,7 +10945,7 @@ header.masthead2 {
   background-size: cover;
 }
 header.masthead2 h1 {
-  font-size: 6.5rem;
+  font-size: 6rem;
   font-family: playlistscript;
 }
 @media (min-width: 992px) {
@@ -11710,7 +11723,7 @@ header.masthead14 h3 {
 
 @media screen and (max-width: 600px) {
   .sectionheader {
-    font-size: 1em;
+    font-size: 3em;
   }
 }
 
