@@ -33,7 +33,7 @@ function animateValue(id, start, end, duration, step) {
 
 
 animateValue("js-number-reached", 0, 6, 6000, 1000);
-animateValue("js-number-countries", 0, 117, 6000);
+animateValue("js-number-countries", 0, 120, 6000);
 animateValue("js-number-chapters", 0, 110, 6000);
 animateValue("value4", 0, 5, 6000);
 animateValue("value5", 0, 181, 6000);
