@@ -8944,7 +8944,7 @@ header.masthead h1 {
   bottom: 0;
   text-align: center;
   opacity: 0;
-  color: #fff;
+  color: #ffffff;
   background: rgba(244, 98, 58, 0.9);
   transition: opacity 0.25s ease;
   text-align: center;
@@ -8971,3 +8971,4 @@ header.masthead h1 {
 #portfolio .container-fluid .portfolio-box:hover .portfolio-box-caption {
   opacity: 1;
 }
+

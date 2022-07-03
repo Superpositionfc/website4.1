@@ -19,9 +19,6 @@
   );
 }
 
-#home2 {
-}
-
 * {
   margin: 0;
   padding: 0;
@@ -316,7 +313,7 @@ h6 {
     margin: 10px 0;
   }
   #locationsub2 {
-    font-size: 120%;
+    font-size: 100%;
   }
 }
 
@@ -1281,7 +1278,7 @@ section.visible {
 
 #locationsub2 {
   letter-spacing: 1px;
-  font-size: 180%;
+  font-size: 150%;
   font-family: "Nanum Gothic";
 }
 
@@ -11930,6 +11927,6 @@ header.masthead15 h3 {
 }
 
 .hackathon-prizes {
-  max-width: 50%;
+  max-width: 80%;
   height: auto;
 }
