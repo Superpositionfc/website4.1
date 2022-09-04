@@ -6020,6 +6020,7 @@ input[type="submit"].btn-block {
 }
 .card-deck .card {
   margin-bottom: 15px;
+  flex: 1 0 auto;
 }
 @media (min-width: 576px) {
   .card-deck {
@@ -6034,6 +6035,7 @@ input[type="submit"].btn-block {
     margin-right: 15px;
     margin-bottom: 0;
     margin-left: 15px;
+    min-width: 33%;
   }
 }
 .card-group {
